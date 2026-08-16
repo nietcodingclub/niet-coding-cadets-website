@@ -6,14 +6,17 @@
 
 **The CSE technical community at Noida Institute of Engineering and Technology (NIET), Greater Noida.**
 
-[![Live Website](https://img.shields.io/badge/Website-Live-E3262E?style=for-the-badge&logo=google-chrome&logoColor=white)](#)
+[![Live Website](https://img.shields.io/badge/Website-Live-E3262E?style=for-the-badge&logo=google-chrome&logoColor=white)](https://nietcodingclub-niet-coding-cadets-website.nietcodingcadets.workers.dev/)
 [![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](#)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](#)
 [![Vite](https://img.shields.io/badge/Vite-8-646CFF?style=for-the-badge&logo=vite&logoColor=white)](#)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](#)
 
-</div>
+<p>
+  🌐 <strong><a href="https://nietcodingclub-niet-coding-cadets-website.nietcodingcadets.workers.dev/">Visit the Live Website →</a></strong>
+</p>
 
+</div>
 ---
 
 ## About
