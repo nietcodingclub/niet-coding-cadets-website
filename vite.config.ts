@@ -31,6 +31,9 @@ export default defineConfig({
       cloudflare: {
         nodeCompat: true,
         deployConfig: true,
+        wrangler: {
+          name: "niet-coding-cadets",
+        },
       },
     }),
     react(),
