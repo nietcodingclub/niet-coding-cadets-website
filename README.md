@@ -39,14 +39,17 @@ This repository contains the official club website — a digital home for the co
 ## ✨ What the Website Includes
 
 ### 🏠 Home
+
 A high-impact introduction to NIET Coding Cadets with the club's mission, statistics, calls to action and featured content.
 
 ### 📖 About
+
 An overview of the community and its journey:
 
 **Learn → Build → Compete → Lead → Grow**
 
 ### 🎯 Events
+
 Browse upcoming and completed club events with category filtering, event status, posters and dedicated event detail pages.
 
 Current event categories include:
@@ -60,12 +63,15 @@ Current event categories include:
 - Other
 
 ### 🏅 Achievements
+
 A dedicated space for verified club and student accomplishments, including major milestones and an achievement timeline.
 
 ### 👥 Team
+
 Meet the people behind the community, including club leadership and core team members with professional profile links.
 
 ### 📸 Gallery
+
 A visual collection of club moments across:
 
 - Events
@@ -74,12 +80,15 @@ A visual collection of club moments across:
 - Team activities
 
 ### ⭐ Cadets in Action
+
 Student spotlights highlighting meaningful achievements, projects, competitions, certifications and contributions.
 
 ### 📚 Resources
+
 A place for students to discover learning material and practice resources across areas such as DSA, Java, JavaScript, Web Development, SQL, Git/GitHub and interview preparation.
 
 ### 🚀 Join the Club
+
 Clear calls to action for students who want to participate, learn, build and contribute.
 
 ---
@@ -191,16 +200,16 @@ This makes it easier to update:
 
 ## 🛠️ Tech Stack
 
-| Technology | Purpose |
-|---|---|
-| **React 19** | UI development |
-| **TypeScript** | Type-safe application code |
-| **TanStack Start** | Full-stack React application framework |
-| **TanStack Router** | Application routing |
-| **Vite** | Development and production build tooling |
-| **Tailwind CSS 4** | Styling and responsive UI |
-| **Lucide React** | Interface icons |
-| **Nitro** | Production server/build layer |
+| Technology          | Purpose                                  |
+| ------------------- | ---------------------------------------- |
+| **React 19**        | UI development                           |
+| **TypeScript**      | Type-safe application code               |
+| **TanStack Start**  | Full-stack React application framework   |
+| **TanStack Router** | Application routing                      |
+| **Vite**            | Development and production build tooling |
+| **Tailwind CSS 4**  | Styling and responsive UI                |
+| **Lucide React**    | Interface icons                          |
+| **Nitro**           | Production server/build layer            |
 
 ---
 
@@ -475,6 +484,28 @@ Unless explicitly stated otherwise, club branding, photographs and official cont
 
 **Ctrl + C(ode) | Ctrl + V(ictory)**
 
-*Where the tech community at NIET happens.*
+_Where the tech community at NIET happens._
 
 </div>
+
+---
+
+## 👨‍💻 Developer
+
+**Tanmay Awasthi**  
+Developer & Maintainer — NIET Coding Cadets Website
+
+Designed and developed the official website for **NIET Coding Cadets**, showcasing the club's events, competitions, workshops, achievements, community activities, and student opportunities.
+
+<p>
+  <a href="https://github.com/Tanmay0405">
+    <img src="https://img.shields.io/badge/GitHub-Tanmay%20Awasthi-181717?style=for-the-badge&logo=github" alt="GitHub">
+  </a>
+  <a href="https://www.linkedin.com/in/tanmay-awasthi-programmer4/">
+    <img src="https://img.shields.io/badge/LinkedIn-Tanmay%20Awasthi-0A66C2?style=for-the-badge&logo=linkedin" alt="LinkedIn">
+  </a>
+</p>
+
+> Built with passion for technology, clean design, and the NIET Coding Cadets community.
+
+---
