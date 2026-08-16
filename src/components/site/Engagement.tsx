@@ -86,7 +86,10 @@ export function CodingChallenge() {
 
                 {showHint ? (
                   <p className="mt-5 flex gap-2.5 rounded-xl border border-hairline bg-elevated p-4 text-sm text-muted-foreground">
-                    <Lightbulb className="mt-0.5 h-4 w-4 shrink-0 text-brand-bright" aria-hidden="true" />
+                    <Lightbulb
+                      className="mt-0.5 h-4 w-4 shrink-0 text-brand-bright"
+                      aria-hidden="true"
+                    />
                     {challenge.hint}
                   </p>
                 ) : null}
@@ -205,8 +208,15 @@ const commandResponses: Record<string, string[]> = {
     "NIET Coding Cadets \u2014 CSE technical club, NIET Greater Noida.",
     "we learn, build, compete and ship together.",
   ],
-  events: ["Algo Arena \u2022 DSA Bootcamp \u2022 Code Jam \u2022 Tech Talks", "see /events for details."],
-  team: ["president, vice president, technical, event, design, social heads + core team.", "see /team"],
+  events: [
+    "Cyber Sapiens • Battle of Bots • Escape Room",
+    "Algo Arena • Dominance • Segue 3.0",
+    "see /events for details.",
+  ],
+  team: [
+    "president, vice president, technical, event, design, social heads + core team.",
+    "see /team",
+  ],
   join: ["run: open /join \u2014 or hit the Join the Cadets button.", "everyone is welcome."],
 };
 
@@ -252,7 +262,10 @@ export function InteractiveTerminal() {
           </div>
         ))}
       </div>
-      <form onSubmit={submit} className="mt-4 flex items-center gap-2 border-t border-hairline pt-4">
+      <form
+        onSubmit={submit}
+        className="mt-4 flex items-center gap-2 border-t border-hairline pt-4"
+      >
         <label htmlFor="cadet-terminal" className="font-mono text-sm text-brand-bright">
           $
         </label>

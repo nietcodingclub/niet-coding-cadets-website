@@ -76,8 +76,7 @@ export const stats: {
   note?: string;
 }[] = [
     { value: "150+", target: 150, suffix: "+", label: "Students Mentored", note: "Peer learning sessions" },
-    { value: "XX+", label: "Events & Activities", note: "[ADD CONFIRMED COUNT]" },
-    { value: "Top 30", label: "Smart India Hackathon", note: "Selected among the Top 30 teams" },
+    { value: "6+", label: "Events & Activities", note: "Technical & community events" },
     { value: "\u221E", label: "Ideas & Possibilities", note: "Always shipping" },
   ];
 

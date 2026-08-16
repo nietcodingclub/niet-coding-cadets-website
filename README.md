@@ -1,1222 +1,480 @@
-# Cadet Connect
+# NIET Coding Cadets
 
-# Build a Premium, Interactive Website for NIET Coding Cadets
+<div align="center">
 
-Create a modern, highly aesthetic, interactive and responsive official website for **NIET Coding Cadets**, the technical club of the **Computer Science & Engineering Department at Noida Institute of Engineering and Technology (NIET), Greater Noida, India**.
+### **BUILD. COMPETE. CREATE.**
 
-The website should feel like a combination of a **modern developer community, college tech club, hackathon platform, and premium startup website**.
+**The CSE technical community at Noida Institute of Engineering and Technology (NIET), Greater Noida.**
 
-Do NOT make it look like a generic college website.
+[![Live Website](https://img.shields.io/badge/Website-Live-E3262E?style=for-the-badge&logo=google-chrome&logoColor=white)](#)
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](#)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](#)
+[![Vite](https://img.shields.io/badge/Vite-8-646CFF?style=for-the-badge&logo=vite&logoColor=white)](#)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](#)
 
-The primary objective is to make students think:
-
-> “This looks exciting. I want to join this club.”
-
-The website should strongly communicate:
-
-* Coding
-* Technology
-* Innovation
-* Community
-* Competitions
-* Hackathons
-* Workshops
-* Student achievements
-* Learning
-* Collaboration
-* Career growth
-* Fun and campus energy
+</div>
 
 ---
 
-# 1. BRAND IDENTITY
+## About
 
-## Club Name
+**NIET Coding Cadets** is the technical club of the **Computer Science & Engineering Department at Noida Institute of Engineering and Technology (NIET), Greater Noida**.
 
-**NIET Coding Cadets**
+The club brings together students who are passionate about:
 
-## Institution
+- 💻 Coding and software development
+- 🧠 Problem solving and DSA
+- 🏆 Competitions and challenges
+- 🚀 Hackathons and innovation
+- 🛠️ Technical workshops
+- 🤝 Peer learning and collaboration
+- 📈 Technical and professional growth
 
-**Noida Institute of Engineering and Technology (NIET)**
+This repository contains the official club website — a digital home for the community, its events, achievements, leadership, gallery and student stories.
 
-## Department
-
-**Computer Science & Engineering**
-
-## Location
-
-**Greater Noida, Uttar Pradesh, India**
-
-## Brand personality
-
-The website should feel:
-
-* Futuristic
-* Technical
-* Energetic
-* Youthful
-* Premium
-* Intelligent
-* Competitive
-* Community-driven
-* Modern
-* Slightly edgy
-
-Avoid making it overly corporate or overly academic.
+> **Where students learn technology, turn ideas into projects, challenge themselves through competitions, and grow together as a technical community.**
 
 ---
 
-# 2. VISUAL DESIGN DIRECTION
+## ✨ What the Website Includes
 
-Use the existing NIET Coding Cadets visual identity as inspiration.
+### 🏠 Home
+A high-impact introduction to NIET Coding Cadets with the club's mission, statistics, calls to action and featured content.
 
-The club currently uses a **dark black/charcoal and red visual identity**, so maintain that direction.
-
-### Primary colors
-
-* Near-black / charcoal background
-* Deep black sections
-* Red as the primary accent
-* White / off-white typography
-* Subtle grey secondary text
-
-Use gradients very carefully.
-
-Suggested palette:
-
-* Background: #08090B
-* Secondary background: #101216
-* Card background: #15171C
-* Primary accent: #E3262E
-* Bright accent: #FF3B3B
-* White: #F5F5F5
-* Muted text: #9CA3AF
-
-Do NOT make the entire website red.
-
-Red should be used strategically for:
-
-* Buttons
-* Highlights
-* Hover states
-* Borders
-* Small decorative elements
-* Important statistics
-* Active navigation states
-
----
-
-# 3. TYPOGRAPHY
-
-Use a modern developer/startup-style font.
-
-Preferred fonts:
-
-* Inter
-* Space Grotesk
-* Sora
-* Manrope
-
-Use a strong display font for major headings and a clean sans-serif for body text.
-
-Headings should feel bold and confident.
-
-Example:
-
-**BUILD. COMPETE. CREATE.**
-
-or
-
-**WHERE CODERS BECOME CREATORS.**
-
----
-
-# 4. OVERALL UI STYLE
-
-Use:
-
-* Glassmorphism selectively
-* Dark cards
-* Thin borders
-* Soft shadows
-* Subtle red glow
-* Rounded corners
-* Large typography
-* Plenty of whitespace
-* Interactive hover states
-* Smooth transitions
-* Modern icons
-* Subtle grid patterns
-* Developer-inspired visual elements
-
-Do NOT overuse:
-
-* Glass effects
-* Neon colors
-* Excessive animations
-* Huge gradients
-* Random 3D objects
-
-The design should remain premium and professional.
-
----
-
-# 5. NAVIGATION
-
-Create a sticky modern navigation bar.
-
-Left:
-
-**NIET CODING CADETS**
-
-with the club logo.
-
-Navigation:
-
-* Home
-* About
-* Events
-* Achievements
-* Team
-* Gallery
-* Resources
-
-Right side:
-
-**Join the Club →**
-
-The navigation should become slightly blurred/translucent when scrolling.
-
-On mobile, use a smooth hamburger menu.
-
----
-
-# 6. HERO SECTION
-
-The hero section must immediately grab a student's attention.
-
-Use a large full-screen or near-full-screen hero.
-
-Main headline:
-
-**CODE. COMPETE. CREATE.**
-
-Alternative supporting headline:
-
-**Where curiosity turns into code, ideas turn into innovation, and students become creators.**
-
-Short description:
-
-**NIET Coding Cadets is the CSE technical community at NIET, bringing together students passionate about coding, technology, problem-solving and innovation.**
-
-Primary CTA:
-
-**Join Coding Cadets →**
-
-Secondary CTA:
-
-**Explore Events**
-
-Add a subtle animated developer background.
-
-Possible background elements:
-
-* Code snippets
-* Terminal commands
-* Binary patterns
-* `{ }`
-* `</>`
-* `01`
-* `npm`
-* `git`
-* `Java`
-* `Python`
-* `SQL`
-* `React`
-* `Node.js`
-
-Keep them subtle and low-opacity.
-
----
-
-# 7. HERO INTERACTION
-
-Add an attractive interactive element.
-
-For example:
-
-A floating terminal window displaying:
-
-```text
-$ whoami
-
-coding_cadet
-
-$ passion
-
-technology
-
-$ mission
-
-build • learn • compete
-
-$ status
-
-READY TO CODE_
-```
-
-Animate the cursor blinking.
-
-The terminal should not dominate the hero.
-
----
-
-# 8. QUICK STATS SECTION
-
-Immediately after the hero, display animated statistics.
-
-Use counters that animate when they enter the viewport.
-
-Example:
-
-**150+**
-Students Mentored
-
-**30+**
-Events & Activities
-
-**Top 30**
-Smart India Hackathon
-
-**∞**
-Ideas & Possibilities
-
-IMPORTANT:
-
-Do not invent statistics.
-
-If an exact number is not confirmed, use a placeholder such as:
-
-`XX+ Events`
-
-or use qualitative achievements instead.
-
-Make the statistics editable from one central data object.
-
----
-
-# 9. ABOUT THE CLUB
-
-Create a visually engaging About section.
-
-Heading:
-
-**MORE THAN A CODING CLUB.**
-
-Content:
-
-**NIET Coding Cadets is the technical club of the Computer Science & Engineering Department at NIET. We bring together students who want to learn, build, compete and explore the world of technology.**
-
-Explain that the club provides opportunities through:
-
-* Coding competitions
-* Technical workshops
-* Hackathons
-* Problem-solving activities
-* Peer learning
-* Project showcases
-* Technical discussions
-* Career-oriented activities
-
-Add a visual timeline or animated cards showing:
+### 📖 About
+An overview of the community and its journey:
 
 **Learn → Build → Compete → Lead → Grow**
 
----
+### 🎯 Events
+Browse upcoming and completed club events with category filtering, event status, posters and dedicated event detail pages.
 
-# 10. WHY JOIN US?
+Current event categories include:
 
-Create a visually impressive section called:
+- Coding
+- Hackathon
+- Workshop
+- Competition
+- Seminar
+- Community
+- Other
 
-**WHY BECOME A CADET?**
+### 🏅 Achievements
+A dedicated space for verified club and student accomplishments, including major milestones and an achievement timeline.
 
-Create six interactive cards:
+### 👥 Team
+Meet the people behind the community, including club leadership and core team members with professional profile links.
 
-### Learn
+### 📸 Gallery
+A visual collection of club moments across:
 
-Explore technologies beyond the classroom.
+- Events
+- Workshops
+- Competitions
+- Team activities
 
-### Build
+### ⭐ Cadets in Action
+Student spotlights highlighting meaningful achievements, projects, competitions, certifications and contributions.
 
-Turn ideas into real projects.
+### 📚 Resources
+A place for students to discover learning material and practice resources across areas such as DSA, Java, JavaScript, Web Development, SQL, Git/GitHub and interview preparation.
 
-### Compete
-
-Challenge yourself through coding contests and competitions.
-
-### Connect
-
-Meet students who share your interests.
-
-### Lead
-
-Take responsibility and develop leadership skills.
-
-### Grow
-
-Build technical and professional confidence.
-
-Cards should have subtle hover animations.
-
----
-
-# 11. EVENTS SECTION
-
-Create an interactive Events section.
-
-Heading:
-
-**WHAT'S HAPPENING?**
-
-Display upcoming and previous events.
-
-Each event card should include:
-
-* Event name
-* Date
-* Time
-* Venue
-* Category
-* Short description
-* Registration status
-* Register button
-* Event image/poster
-
-Categories:
-
-* Coding
-* Hackathon
-* Workshop
-* Competition
-* Seminar
-* Community
-* Other
-
-Add filters:
-
-**All | Coding | Workshops | Competitions | Hackathons**
-
-Use attractive cards.
-
-Upcoming events should have a small:
-
-**LIVE / UPCOMING**
-
-badge.
-
-Past events should show:
-
-**COMPLETED**
+### 🚀 Join the Club
+Clear calls to action for students who want to participate, learn, build and contribute.
 
 ---
 
-# 12. EVENT DETAIL PAGE
+## 🗓️ Featured Event
 
-Each event should open into a dedicated event detail view/page.
+### Segue 3.0 — Sustainable Intelligence
 
-Include:
+**Segue 3.0** is a Global Design Thinking Challenge focused on solving real-world problems through innovation, collaboration and sustainable solutions.
 
-* Event poster
-* Description
-* Date
-* Time
-* Venue
-* Rules
-* Eligibility
-* Prizes
-* Registration deadline
-* Registration button
-* Event gallery
-* Winners
+The challenge follows a structured journey involving:
 
-For registration, make the URL configurable.
+**Team Registration → Proposal Submission → Online Pitching → Grand Finale**
 
-Do NOT hardcode fake registration links.
+The event is presented by the **School of Future Skills** in collaboration with **NIET, Greater Noida**.
+
+Learn more and register:
+
+**https://schooloffutureskills.com/segue-3-0/**
 
 ---
 
-# 13. FEATURED EVENT
+## 🏆 Community Highlights
 
-Create a visually prominent featured-event component.
+The website is designed to showcase real accomplishments rather than placeholder claims.
 
-Example:
+Examples currently represented in the project include:
 
-**ALGO ARENA**
+- **Smart India Hackathon** — student achievement involving selection among the Top 30 teams
+- **Cyber Sapiens** — cybersecurity-focused technical challenge
+- **Battle of Bots** — gaming and technology competition
+- **Algo Arena** — competitive coding event
+- **Dominance** — technical competition
+- **Escape Room** — problem-solving and teamwork challenge
 
-Subtitle:
-
-**Where logic meets speed.**
-
-Display:
-
-* Quiz Round
-* Speed Challenge
-* Coding Duel
-* Prizes
-* Certificates
-
-Use a countdown timer only when a real upcoming event has a confirmed date.
-
-Make the featured event editable.
+> Event and achievement information is maintained through structured data files so confirmed information can be updated without rewriting UI components.
 
 ---
 
-# 14. ACHIEVEMENTS SECTION
+## 🎨 Design Philosophy
 
-This should be one of the most important sections of the website.
+The website follows a **dark, technical and premium visual identity** inspired by the club's black/red branding.
 
-Heading:
+### Visual direction
 
-**BUILT TO ACHIEVE.**
+- Near-black and charcoal backgrounds
+- Red accent color
+- High-contrast typography
+- Dark cards with subtle borders
+- Carefully used glass effects
+- Soft shadows and red highlights
+- Technical grid/code-inspired details
+- Responsive layouts
+- Smooth micro-interactions
 
-Show club achievements through large visual cards.
+The goal is not to create another generic college website.
 
-Known achievement:
-
-### Smart India Hackathon
-
-**Selected among the Top 30 Teams**
-
-The achievement should be presented prominently.
-
-Also create a reusable achievement structure for future accomplishments:
-
-* Achievement title
-* Year
-* Category
-* Description
-* Team/member names
-* Certificate/photo
-* External link if available
-
-Do not fabricate achievements.
-
-Allow achievements to be added easily from a central data file.
+The goal is to make the site feel like a **modern developer community and technology platform** while retaining the credibility of an official college club.
 
 ---
 
-# 15. ACHIEVEMENT TIMELINE
+## 🧱 Architecture
 
-Create a vertical interactive timeline.
+Club information is intentionally separated from UI components.
 
-Example:
-
-**2024**
-Major Club Activities
-
-↓
-
-**2025**
-Competitions • Events • Workshops
-
-↓
-
-**2026**
-New Milestones
-
-Use real data where available.
-
-If information is missing, use placeholders rather than inventing details.
-
----
-
-# 16. TEAM SECTION
-
-Create:
-
-**MEET THE PEOPLE BEHIND THE CODE.**
-
-Display the club leadership team.
-
-Each member card should contain:
-
-* Photo
-* Name
-* Position
-* Short role description
-* LinkedIn icon
-* GitHub icon if available
-
-Example roles:
-
-* President
-* Vice President
-* Technical Head
-* Event Head
-* Design Head
-* Social Media Head
-* Core Team
-
-IMPORTANT:
-
-Do not invent names.
-
-Create a clean editable team data structure.
-
----
-
-# 17. PRESIDENT / LEADERSHIP FEATURE
-
-Create one large leadership feature card.
-
-Example:
-
-**THE PEOPLE WHO KEEP THE COMMUNITY MOVING.**
-
-Show the current club leadership with a premium layout.
-
-Include:
-
-* Photograph
-* Name
-* Position
-* Short introduction
-* Social links
-
----
-
-# 18. GALLERY
-
-Create a highly visual gallery.
-
-Heading:
-
-**MOMENTS THAT MATTER.**
-
-Display photographs from:
-
-* Coding competitions
-* Workshops
-* Hackathons
-* Club meetings
-* Team activities
-* Award ceremonies
-* Campus events
-
-Add filters:
-
-**All | Events | Workshops | Competitions | Team**
-
-Use a modern masonry-style gallery.
-
-Clicking an image should open a smooth lightbox.
-
----
-
-# 19. STUDENT SPOTLIGHT
-
-Create a section:
-
-**CADETS IN ACTION.**
-
-Feature students who achieved something notable.
-
-Examples:
-
-* Hackathon achievements
-* Coding milestones
-* Placements
-* Competition wins
-* Projects
-* Certifications
-
-Each spotlight should contain:
-
-**Name**
-**Achievement**
-**Short story**
-**LinkedIn/GitHub**
-
-This section should encourage students to aspire to participate.
-
----
-
-# 20. CODING CHALLENGE SECTION
-
-Create an interactive section called:
-
-**READY TO TEST YOUR SKILLS?**
-
-Display a random coding challenge.
-
-Example:
+A simplified structure looks like:
 
 ```text
-CHALLENGE #027
-
-Find the first non-repeating
-character in a string.
-
-Difficulty: Medium
-
-[TRY CHALLENGE →]
+src/
+├── assets/
+│   ├── events/
+│   ├── team/
+│   └── ...
+│
+├── components/
+│   ├── ...
+│
+├── data/
+│   ├── site.ts
+│   ├── events.ts
+│   ├── achievements.ts
+│   ├── team.ts
+│   ├── gallery.ts
+│   └── ...
+│
+├── routes/
+│   ├── ...
+│
+└── server.ts
 ```
 
-Add buttons:
+### Centralized data
 
-**Easy | Medium | Hard**
+Important club information is maintained through data/configuration files rather than being scattered throughout components.
 
-The questions can initially come from a local JSON dataset.
+This makes it easier to update:
 
-Do not require a backend unless necessary.
-
----
-
-# 21. TECH RESOURCES SECTION
-
-Create:
-
-**LEVEL UP YOUR SKILLS.**
-
-Cards for:
-
-* DSA
-* Java
-* JavaScript
-* Web Development
-* SQL
-* Git & GitHub
-* Interview Preparation
-* Competitive Programming
-
-Each card can contain:
-
-* Beginner resources
-* Practice links
-* Recommended websites
-* Club-created notes
-
-Allow external links to be configured.
+- Events
+- Posters
+- Registration links
+- Team members
+- LinkedIn/GitHub profiles
+- Achievements
+- Gallery images
+- Social links
+- Club statistics
 
 ---
 
-# 22. CLUB PARTICIPATION / JOIN SECTION
+## 🛠️ Tech Stack
 
-Create a powerful CTA section near the bottom.
-
-Heading:
-
-**YOUR CODE. YOUR IDEAS. YOUR COMMUNITY.**
-
-Text:
-
-**Don't just watch from the sidelines. Build something. Compete. Learn. Lead. Become a Cadet.**
-
-Button:
-
-**JOIN CODING CADETS →**
-
-Secondary:
-
-**FOLLOW US ON INSTAGRAM**
-
-The registration URL should be configurable.
+| Technology | Purpose |
+|---|---|
+| **React 19** | UI development |
+| **TypeScript** | Type-safe application code |
+| **TanStack Start** | Full-stack React application framework |
+| **TanStack Router** | Application routing |
+| **Vite** | Development and production build tooling |
+| **Tailwind CSS 4** | Styling and responsive UI |
+| **Lucide React** | Interface icons |
+| **Nitro** | Production server/build layer |
 
 ---
 
-# 23. SOCIAL MEDIA
+## 🚀 Getting Started
 
-Create a social section:
+### Prerequisites
 
-**FOLLOW THE JOURNEY.**
+Make sure you have:
 
-Display:
+- Node.js
+- npm
+- Git
 
-Instagram
-LinkedIn
-GitHub
-WhatsApp Community
+### Clone the repository
 
-Use official links as configurable variables.
+```bash
+git clone <repository-url>
+cd niet-coding-cadets-website
+```
 
-For Instagram:
+### Install dependencies
 
-**@niet.coding.cadets**
+```bash
+npm install
+```
 
----
+### Start the development server
 
-# 24. INSTAGRAM FEED
+```bash
+npm run dev
+```
 
-If technically possible, create an Instagram-style gallery showing recent club content.
-
-If Instagram API integration is not available, create a visually similar static component using manually added images.
-
-Do not create fake posts.
-
-Add:
-
-**See More on Instagram →**
+The local development server will provide the URL shown in your terminal.
 
 ---
 
-# 25. FOOTER
+## 📦 Production Build
 
-Premium dark footer.
+Before deploying, verify that the production build succeeds:
 
-Include:
+```bash
+npm run build
+```
 
-**NIET Coding Cadets**
+Preview the production build with:
 
-**Official CSE Technical Club
-Noida Institute of Engineering and Technology
-Greater Noida, Uttar Pradesh**
+```bash
+npm run preview
+```
 
-Links:
+---
 
-* Home
-* About
-* Events
-* Achievements
-* Team
-* Gallery
-* Resources
-* Join Us
+## 🔧 Updating Club Content
 
-Social icons:
+Most content changes should be made in the corresponding files under:
 
-* Instagram
-* LinkedIn
-* GitHub
-* WhatsApp
+```text
+src/data/
+```
 
-Footer tagline:
+For example:
+
+```text
+src/data/events.ts
+src/data/team.ts
+src/data/achievements.ts
+src/data/gallery.ts
+src/data/site.ts
+```
+
+### Add a new event
+
+Add the event to `src/data/events.ts` and provide its:
+
+- Name
+- Date
+- Venue
+- Category
+- Status
+- Description
+- Poster
+- Registration URL
+- Other confirmed details
+
+### Add a team member
+
+Update `src/data/team.ts` and add:
+
+- Name
+- Role
+- Bio
+- Photograph
+- LinkedIn
+- GitHub, when available
+
+### Add photographs
+
+Place the image inside the appropriate directory under:
+
+```text
+src/assets/
+```
+
+Then import it into the relevant data file.
+
+---
+
+## 🔗 Official Community Links
+
+- **Instagram:** https://www.instagram.com/niet.coding.cadets/
+- **LinkedIn:** https://www.linkedin.com/company/niet-coding-cadets/
+- **GitHub:** https://github.com/nietcodingclub
+- **WhatsApp Community:** https://chat.whatsapp.com/JXgxzkt91VzLogg9cn0TeP
+
+---
+
+## 📌 Content Integrity
+
+This is an official college club website, so **accuracy matters**.
+
+The project follows a simple rule:
+
+> **Never invent club information.**
+
+Do not add unverified:
+
+- Achievements
+- Awards
+- Statistics
+- Team members
+- Event winners
+- Sponsors
+- Partnerships
+- Dates
+- Registration links
+- Social accounts
+
+When information is not confirmed, use a clear placeholder such as:
+
+```text
+[ADD DATE]
+[ADD TEAM MEMBER]
+[ADD REGISTRATION LINK]
+```
+
+This keeps the website credible while making future updates easy.
+
+---
+
+## 📱 Responsive & Accessible
+
+The website is designed for:
+
+- 🖥️ Desktop
+- 💻 Laptop
+- 📱 Mobile
+- 📟 Tablet
+
+The UI aims to provide:
+
+- Semantic HTML
+- Keyboard-friendly interaction
+- Accessible controls
+- Proper image alt text
+- Responsive typography
+- Touch-friendly buttons
+- No intentional horizontal scrolling
+
+---
+
+## ⚡ Performance
+
+Performance is treated as part of the product.
+
+The project prioritizes:
+
+- Optimized assets
+- Efficient component rendering
+- Responsive images
+- Lazy loading where appropriate
+- Lightweight interactions
+- Production builds through Vite
+- Minimal unnecessary client-side work
+
+---
+
+## 🗺️ Community Journey
+
+The website represents the journey we want every Cadet to experience:
+
+```text
+        ┌─────────┐
+        │  LEARN  │
+        └────┬────┘
+             ↓
+        ┌─────────┐
+        │  BUILD  │
+        └────┬────┘
+             ↓
+       ┌───────────┐
+       │  COMPETE  │
+       └─────┬─────┘
+             ↓
+        ┌─────────┐
+        │  LEAD   │
+        └────┬────┘
+             ↓
+        ┌─────────┐
+        │  GROW   │
+        └─────────┘
+```
+
+---
+
+## 🤝 Contributing
+
+This website represents a student community, so contributions are welcome when they improve the experience or accurately represent the club.
+
+Before contributing:
+
+1. Create a branch for your change.
+2. Keep club information factual and verified.
+3. Follow the existing component/data structure.
+4. Test the application locally.
+5. Run the production build.
+6. Open a pull request with a clear description.
+
+Example:
+
+```bash
+git checkout -b feature/update-events
+
+npm install
+npm run dev
+npm run build
+
+git add .
+git commit -m "Update club events"
+git push origin feature/update-events
+```
+
+---
+
+## 🧭 Roadmap
+
+Potential future improvements include:
+
+- [ ] More real event photography
+- [ ] Complete leadership/team profiles
+- [ ] More student spotlights
+- [ ] Expanded technical resources
+- [ ] Daily coding challenge dataset
+- [ ] Interactive skill explorer
+- [ ] Improved event discovery
+- [ ] More achievement history
+- [ ] Additional accessibility improvements
+- [ ] Performance and SEO refinements
+
+---
+
+## 📜 License
+
+This project is maintained for the **NIET Coding Cadets community**.
+
+Unless explicitly stated otherwise, club branding, photographs and official content should not be reused without appropriate permission.
+
+---
+
+<div align="center">
+
+### **NIET CODING CADETS**
 
 **Ctrl + C(ode) | Ctrl + V(ictory)**
 
-Copyright:
+*Where the tech community at NIET happens.*
 
-**© 2026 NIET Coding Cadets. All rights reserved.**
-
----
-
-# 26. ENGAGEMENT FEATURES
-
-The website should NOT be just a static information page.
-
-Add interactive features such as:
-
-### Daily Coding Challenge
-
-Show a new challenge every day.
-
-### Event Countdown
-
-For upcoming events.
-
-### Achievement Wall
-
-Students can explore achievements.
-
-### Student Spotlight
-
-Highlight successful students.
-
-### Tech Poll
-
-Example:
-
-**Which technology should we explore next?**
-
-Options:
-
-* AI
-* Web Development
-* Cybersecurity
-* Cloud
-
-### Skill Explorer
-
-Students select an interest:
-
-`Web Development`
-`Java`
-`Python`
-`AI/ML`
-`Cybersecurity`
-`DSA`
-
-Then show recommended club resources.
-
-### Interactive Terminal
-
-Let users type basic commands such as:
-
-`help`
-`about`
-`events`
-`team`
-`join`
-
-and display responses.
-
-Keep it playful and optional.
-
----
-
-# 27. MICRO-INTERACTIONS
-
-Use polished animations throughout the website.
-
-Examples:
-
-* Text reveal animation
-* Scroll-triggered animations
-* Card hover effects
-* Button hover effects
-* Animated counters
-* Smooth section transitions
-* Image zoom on hover
-* Magnetic CTA buttons
-* Subtle cursor interaction
-* Animated terminal cursor
-* Progress indicators
-
-Animations must be subtle and fast.
-
-Do NOT make the website slow or overloaded with effects.
-
----
-
-# 28. RESPONSIVE DESIGN
-
-The website MUST be fully responsive.
-
-Desktop:
-
-* Large hero
-* Multi-column cards
-* Spacious layouts
-
-Tablet:
-
-* Adjust grid layouts
-
-Mobile:
-
-* Hamburger navigation
-* Single-column cards
-* Touch-friendly buttons
-* Optimized typography
-* Proper image sizing
-* No horizontal scrolling
-
-The mobile experience should feel as polished as desktop.
-
----
-
-# 29. PERFORMANCE
-
-Prioritize:
-
-* Fast loading
-* Optimized images
-* Lazy loading
-* Responsive images
-* Minimal JavaScript
-* Efficient animations
-* Good Lighthouse performance
-
-Avoid unnecessarily heavy libraries.
-
----
-
-# 30. ACCESSIBILITY
-
-Implement:
-
-* Semantic HTML
-* Keyboard navigation
-* Proper contrast
-* Alt text
-* Accessible buttons
-* Visible focus states
-* ARIA labels where necessary
-
----
-
-# 31. SEO
-
-Add proper:
-
-Title:
-
-**NIET Coding Cadets | CSE Technical Club**
-
-Meta description:
-
-**NIET Coding Cadets is the official technical club of the CSE Department at NIET, Greater Noida. Explore coding events, workshops, hackathons, achievements and student opportunities.**
-
-Keywords naturally related to:
-
-* NIET Coding Club
-* NIET CSE
-* Coding Club NIET
-* Technical Club NIET
-* Greater Noida Coding Club
-* Coding Events
-* Hackathons
-* Programming
-
-Add Open Graph metadata for social sharing.
-
----
-
-# 32. TECH STACK
-
-If the platform supports code generation, use:
-
-**Next.js**
-**React**
-**TypeScript**
-**Tailwind CSS**
-**Framer Motion**
-
-Use reusable components.
-
-Suggested structure:
-
-```text
-/components
-  Navbar
-  Hero
-  Stats
-  About
-  WhyJoin
-  Events
-  EventCard
-  Achievements
-  AchievementCard
-  Timeline
-  Team
-  Gallery
-  StudentSpotlight
-  CodingChallenge
-  Resources
-  JoinCTA
-  Socials
-  Footer
-
-/data
-  events.ts
-  achievements.ts
-  team.ts
-  gallery.ts
-  resources.ts
-```
-
-Keep all club information in structured data files so the team can update the website without changing component code.
-
----
-
-# 33. CONTENT MANAGEMENT
-
-Make it easy to update:
-
-* Events
-* Event registration links
-* Event posters
-* Achievements
-* Team members
-* Gallery images
-* Resources
-* Social links
-* Club statistics
-
-Use centralized configuration/data files.
-
-Do not hardcode information across multiple components.
-
----
-
-# 34. IMPORTANT CONTENT RULE
-
-Do NOT invent:
-
-* Achievements
-* Awards
-* Statistics
-* Team members
-* Event winners
-* Sponsors
-* Partnerships
-* Registration links
-* Dates
-* Social media accounts
-
-If information is unavailable, create clearly marked placeholders such as:
-
-`[ADD ACHIEVEMENT]`
-
-`[ADD TEAM MEMBER]`
-
-`[ADD REGISTRATION LINK]`
-
-This is extremely important because this is an official college club website.
-
----
-
-# 35. VISUAL STORYTELLING
-
-The website should tell a story:
-
-### STEP 1
-
-**Discover**
-
-“What is NIET Coding Cadets?”
-
-↓
-
-### STEP 2
-
-**Explore**
-
-“What do you guys do?”
-
-↓
-
-### STEP 3
-
-**Believe**
-
-“What have you achieved?”
-
-↓
-
-### STEP 4
-
-**Connect**
-
-“Who are the people behind it?”
-
-↓
-
-### STEP 5
-
-**Participate**
-
-“What events can I join?”
-
-↓
-
-### STEP 6
-
-**Become a Cadet**
-
-“How do I join?”
-
-This should be the natural flow of the homepage.
-
----
-
-# 36. SPECIAL HERO COPY
-
-Use this as the primary website messaging:
-
-**NIET CODING CADETS**
-
-**BUILD. COMPETE. CREATE.**
-
-*Where students learn technology, turn ideas into projects, challenge themselves through competitions, and grow together as a technical community.*
-
-CTA:
-
-**JOIN THE CADETS →**
-
-Secondary CTA:
-
-**EXPLORE OUR JOURNEY ↓**
-
----
-
-# 37. DESIGN DETAILS
-
-Add subtle technical visual details throughout the website:
-
-* `{ }`
-* `</>`
-* `01`
-* `101`
-* `git commit`
-* `npm run build`
-* `console.log()`
-* Cursor lines
-* Grid patterns
-* Terminal windows
-* Code snippets
-
-But keep them subtle.
-
-The website must still feel like a **professional organization website**, not a hacker-themed gaming website.
-
----
-
-# 38. FINAL QUALITY BAR
-
-The final website should look good enough to be presented to:
-
-* CSE Department faculty
-* College administration
-* Students
-* Recruiters
-* Potential collaborators
-* Other college technical clubs
-
-It should look like a **real technology community website**, not an AI-generated template.
-
-Prioritize:
-
-**Premium visual design + strong UX + student engagement + credibility + performance.**
-
-Do not use generic stock photos if actual club photos are available.
-
-Use placeholders for club photographs initially and make them extremely easy to replace.
-
----
-
-# FINAL REQUIREMENT
-
-Generate the complete website, not just a landing page.
-
-It should include:
-
-**Home → About → Events → Event Details → Achievements → Team → Gallery → Resources → Join**
-
-Make the website functional, responsive, polished and production-ready.
-
-The website should have a strong visual identity based on **NIET Coding Cadets' black/red branding** and should make students excited to participate in the club.
-
-The final impression should be:
-
-> **“This is where the tech community at NIET happens.”**
-
-This project was built with [Lovable](https://lovable.dev).
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/650ac10e-a7c7-496e-897f-dc9feaf2b7e0).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
+</div>

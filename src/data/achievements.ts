@@ -15,35 +15,34 @@ export interface Achievement {
 /** Add new achievements here. Never fabricate results. */
 export const achievements: Achievement[] = [
   {
-    title: "Smart India Hackathon",
-    year: "[ADD YEAR]",
-    category: "National Hackathon",
-    result: "Selected among the Top 30 Teams",
+    title: "Building a Strong Coding Community",
+    year: "2024–2026",
+    category: "Community Impact",
+    result: "150+ Students Mentored",
     description:
-      "Cadets built and pitched a solution to a real problem statement at India's largest open innovation initiative, finishing among the Top 30 teams.",
-    members: "[ADD TEAM MEMBER NAMES]",
+      "NIET Coding Cadets has grown into an active technical community focused on peer learning, coding, problem solving, technical events and collaborative growth.",
+    members: "NIET Coding Cadets Community",
     highlight: true,
   },
   {
-    title: "[ADD ACHIEVEMENT]",
-    year: "[ADD YEAR]",
-    category: "[ADD CATEGORY]",
-    result: "[ADD RESULT]",
+    title: "Technical Events & Competitions",
+    year: "2024–2026",
+    category: "Events & Competitions",
+    result: "Multiple Technical Events",
     description:
-      "Placeholder card — replace with a confirmed club or member achievement from src/data/achievements.ts.",
-    members: "[ADD TEAM MEMBER NAMES]",
+      "The club has conducted coding competitions, technical challenges and student-focused activities that encourage practical learning and healthy competition.",
+    members: "NIET Coding Cadets",
   },
   {
-    title: "[ADD ACHIEVEMENT]",
-    year: "[ADD YEAR]",
-    category: "[ADD CATEGORY]",
-    result: "[ADD RESULT]",
+    title: "Student-Led Technical Initiatives",
+    year: "2024–2026",
+    category: "Leadership",
+    result: "Student-Driven Community",
     description:
-      "Placeholder card — replace with a confirmed club or member achievement from src/data/achievements.ts.",
-    members: "[ADD TEAM MEMBER NAMES]",
+      "Cadets take responsibility for organizing activities, coordinating events, supporting peers and creating opportunities for students to explore technology beyond the classroom.",
+    members: "NIET Coding Cadets Core Team",
   },
 ];
-
 export interface TimelineEntry {
   year: string;
   title: string;
@@ -52,25 +51,37 @@ export interface TimelineEntry {
 
 export const timeline: TimelineEntry[] = [
   {
-    year: "2024",
-    title: "Major Club Activities",
+    year: "2021",
+    title: "Club Founded",
     points: [
-      "Community sessions and peer learning began at scale",
-      "[ADD CONFIRMED MILESTONE]",
+      "NIET Coding Cadets was established as a student-led technical community.",
+      "The club was founded to encourage coding, technology, problem solving and peer learning.",
+    ],
+  },
+  {
+    year: "2024",
+    title: "Technical Events & Competitions",
+    points: [
+      "Cyber Sapiens — cybersecurity-focused technical challenge",
+      "Battle of Bots — gaming and technology competition",
+      "Technical activities and student engagement across the CSE community",
     ],
   },
   {
     year: "2025",
-    title: "Competitions \u2022 Events \u2022 Workshops",
+    title: "Competitions • Events • Workshops",
     points: [
-      "Smart India Hackathon participation \u2014 Top 30 teams",
-      "Workshops and contests across the CSE department",
-      "[ADD CONFIRMED MILESTONE]",
+      "Escape Room — logic, teamwork and problem-solving challenge",
+      "Algo Arena — competitive coding and algorithmic problem solving",
     ],
   },
   {
     year: "2026",
-    title: "New Milestones",
-    points: ["Algo Arena and the next season of events", "[ADD UPCOMING MILESTONE]"],
+    title: "Expanding the Community",
+    points: [
+      "Dominance — technical competition focused on logic and problem solving",
+      "Segue 3.0 — Sustainable Intelligence global design thinking challenge",
+      "Continued coding activities, competitions and technical initiatives",
+    ],
   },
 ];

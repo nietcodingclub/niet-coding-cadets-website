@@ -1,38 +1,119 @@
 import placeholderPhoto from "@/assets/placeholder-photo.jpg";
 
-export type GalleryCategory = "Events" | "Workshops" | "Competitions" | "Team";
+export type GalleryCategory =
+  | "Events"
+  | "Workshops"
+  | "Competitions"
+  | "Team";
 
 export interface GalleryItem {
   src: string;
   alt: string;
   caption: string;
   category: GalleryCategory;
-  /** Controls masonry span — "tall" or "wide" for accents. */
   shape?: "tall" | "wide";
 }
 
 /**
- * Gallery images. Replace each placeholder src with a real club photograph
- * (add the file to src/assets and import it above).
+ * Gallery images.
+ * Add real club photographs to src/assets/gallery and import them above.
  */
 export const gallery: GalleryItem[] = [
-  { src: placeholderPhoto, alt: "[ADD CLUB PHOTO] Coding competition", caption: "Coding competition", category: "Competitions", shape: "wide" },
-  { src: placeholderPhoto, alt: "[ADD CLUB PHOTO] Technical workshop", caption: "Technical workshop", category: "Workshops" },
-  { src: placeholderPhoto, alt: "[ADD CLUB PHOTO] Hackathon build night", caption: "Hackathon build night", category: "Events", shape: "tall" },
-  { src: placeholderPhoto, alt: "[ADD CLUB PHOTO] Club meeting", caption: "Club meeting", category: "Team" },
-  { src: placeholderPhoto, alt: "[ADD CLUB PHOTO] Team activity", caption: "Team activity", category: "Team" },
-  { src: placeholderPhoto, alt: "[ADD CLUB PHOTO] Award ceremony", caption: "Award ceremony", category: "Events", shape: "wide" },
-  { src: placeholderPhoto, alt: "[ADD CLUB PHOTO] Campus tech event", caption: "Campus tech event", category: "Events" },
-  { src: placeholderPhoto, alt: "[ADD CLUB PHOTO] Problem solving session", caption: "Problem solving session", category: "Workshops", shape: "tall" },
-  { src: placeholderPhoto, alt: "[ADD CLUB PHOTO] Contest leaderboard reveal", caption: "Contest leaderboard reveal", category: "Competitions" },
+  {
+    src: placeholderPhoto,
+    alt: "[ADD PHOTO] Cyber Sapiens",
+    caption: "Cyber Sapiens",
+    category: "Competitions",
+    shape: "wide",
+  },
+  {
+    src: placeholderPhoto,
+    alt: "[ADD PHOTO] Battle of Bots",
+    caption: "Battle of Bots",
+    category: "Competitions",
+  },
+  {
+    src: placeholderPhoto,
+    alt: "[ADD PHOTO] Escape Room",
+    caption: "Escape Room",
+    category: "Competitions",
+    shape: "tall",
+  },
+  {
+    src: placeholderPhoto,
+    alt: "[ADD PHOTO] Algo Arena",
+    caption: "Algo Arena",
+    category: "Competitions",
+  },
+  {
+    src: placeholderPhoto,
+    alt: "[ADD PHOTO] Dominance",
+    caption: "Dominance",
+    category: "Competitions",
+    shape: "wide",
+  },
+  {
+    src: placeholderPhoto,
+    alt: "[ADD PHOTO] Segue 3.0",
+    caption: "Segue 3.0",
+    category: "Events",
+  },
+  {
+    src: placeholderPhoto,
+    alt: "[ADD PHOTO] Coding Cadets team",
+    caption: "Coding Cadets Team",
+    category: "Team",
+  },
+  {
+    src: placeholderPhoto,
+    alt: "[ADD PHOTO] Technical session",
+    caption: "Technical Session",
+    category: "Workshops",
+    shape: "tall",
+  },
+  {
+    src: placeholderPhoto,
+    alt: "[ADD PHOTO] Coding Cadets event",
+    caption: "Coding Cadets Event",
+    category: "Events",
+  },
 ];
 
-export const galleryFilters = ["All", "Events", "Workshops", "Competitions", "Team"] as const;
+export const galleryFilters = [
+  "All",
+  "Events",
+  "Workshops",
+  "Competitions",
+  "Team",
+] as const;
 
-/** Instagram-style strip. Add real post images + permalinks only. */
-export const instagramPosts: { image: string; alt: string; url: string }[] = [
-  { image: placeholderPhoto, alt: "[ADD INSTAGRAM POST IMAGE]", url: "[ADD POST LINK]" },
-  { image: placeholderPhoto, alt: "[ADD INSTAGRAM POST IMAGE]", url: "[ADD POST LINK]" },
-  { image: placeholderPhoto, alt: "[ADD INSTAGRAM POST IMAGE]", url: "[ADD POST LINK]" },
-  { image: placeholderPhoto, alt: "[ADD INSTAGRAM POST IMAGE]", url: "[ADD POST LINK]" },
-];
+/**
+ * Instagram-style strip.
+ * Add real post images and verified Instagram post links only.
+ */
+export const instagramPosts: {
+  image: string;
+  alt: string;
+  url: string;
+}[] = [
+    {
+      image: placeholderPhoto,
+      alt: "[ADD INSTAGRAM POST IMAGE]",
+      url: "[ADD POST LINK]",
+    },
+    {
+      image: placeholderPhoto,
+      alt: "[ADD INSTAGRAM POST IMAGE]",
+      url: "[ADD POST LINK]",
+    },
+    {
+      image: placeholderPhoto,
+      alt: "[ADD INSTAGRAM POST IMAGE]",
+      url: "[ADD POST LINK]",
+    },
+    {
+      image: placeholderPhoto,
+      alt: "[ADD INSTAGRAM POST IMAGE]",
+      url: "[ADD POST LINK]",
+    },
+  ];

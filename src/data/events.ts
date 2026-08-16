@@ -1,4 +1,10 @@
 import placeholderPhoto from "@/assets/placeholder-photo.jpg";
+import battleOfBots from "@/assets/events/battle-of-bots.png";
+import cyberSapiens from "@/assets/events/cyber-sapiens.png";
+import algoArena from "@/assets/events/algo-arena.png";
+import escapeRoom from "@/assets/events/escape-room.png";
+import dominance from "@/assets/events/dominance.png";
+import seguePoster from "@/assets/events/segue-3-0.png";
 
 export type EventCategory =
   | "Coding"
@@ -44,133 +50,146 @@ export interface ClubEvent {
  */
 export const events: ClubEvent[] = [
   {
-    slug: "algo-arena",
-    name: "Algo Arena",
-    subtitle: "Where logic meets speed.",
-    date: "[ADD DATE]",
-    displayDate: "[ADD DATE]",
-    time: "[ADD TIME]",
-    venue: "[ADD VENUE]",
+  slug: "segue-3-0",
+  name: "Segue 3.0",
+  subtitle: "Sustainable Intelligence",
+  date: "2026-09-25",
+  displayDate: "25–26 Sep 2026",
+  time: "to be announced",
+  venue: "NIET, Greater Noida",
+  category: "Hackathon",
+  status: "live",
+  summary:
+    "A global design thinking challenge focused on solving real-world problems through innovation, collaboration and sustainable solutions.",
+  description:
+    "Segue 3.0 – Sustainable Intelligence is a Global Design Thinking Challenge presented by the School of Future Skills in collaboration with NIET, Greater Noida. Participants develop solutions to real-world problems through a structured design-thinking journey, connecting their ideas with the United Nations Sustainable Development Goals. The challenge includes team registration, proposal submission, shortlisting, online pitching and a grand finale at NIET for the Top 30 teams.",
+  poster: seguePoster,
+  registerUrl: "https://schooloffutureskills.com/segue-3-0-registration-form/",
+  registrationDeadline: "Closed",
+  registrationOpen: false,
+  rounds: [
+    "Team Registration",
+    "Proposal Submission",
+    "Online Pitching",
+    "Grand Finale",
+  ],
+  rules: [
+    "Teams register under a selected problem category.",
+    "Teams submit a presentation/proposal during the submission stage.",
+    "Shortlisted teams proceed to the pitching stage.",
+    "The Grand Finale is conducted offline at NIET, Greater Noida.",
+  ],
+  eligibility: [
+    "Students and professionals",
+    "Teams of up to 6 members",
+  ],
+  prizes: [
+    "₹4.5 Lakh Award Pool",
+    "Awards across multiple categories",
+    "Recognition and global visibility for top-performing teams",
+  ],
+  featured: true,
+},
+  {
+    slug: "dominance",
+    name: "Dominance",
+    subtitle: "Crack. Claim. Conquer.",
+    date: "2026-04-10",
+    displayDate: "April 10, 2026",
+    time: "9:00 AM – 3:00 PM",
+    venue: "Lab 102D",
     category: "Competition",
-    status: "upcoming",
-    summary:
-      "A multi-round battle of logic, speed and precision for coders across every year of CSE.",
-    description:
-      "Algo Arena is the flagship competitive programming event of NIET Coding Cadets. Teams and solo cadets move through a rapid quiz round, a timed speed challenge and a head-to-head coding duel. Bring your fundamentals, your favourite language and your nerves.",
-    poster: placeholderPhoto,
-    registerUrl: "[ADD REGISTRATION LINK]",
-    registrationDeadline: "[ADD DEADLINE]",
-    registrationOpen: true,
-    rounds: ["Quiz Round", "Speed Challenge", "Coding Duel"],
-    rules: [
-      "Any programming language allowed unless a round states otherwise.",
-      "Plagiarism or external help results in immediate disqualification.",
-      "Decisions of the judging panel are final.",
-      "[ADD ADDITIONAL RULES]",
-    ],
-    eligibility: ["Open to all NIET students", "[ADD YEAR/BRANCH RESTRICTIONS IF ANY]"],
-    prizes: ["Prizes for top performers", "Certificates for all qualifiers", "[ADD PRIZE DETAILS]"],
-    featured: true,
-  },
-  {
-    slug: "dsa-bootcamp",
-    name: "DSA Bootcamp",
-    subtitle: "Fundamentals, properly.",
-    date: "[ADD DATE]",
-    displayDate: "[ADD DATE]",
-    time: "[ADD TIME]",
-    venue: "[ADD VENUE]",
-    category: "Workshop",
-    status: "upcoming",
-    summary:
-      "A hands-on session series on arrays, strings, recursion and complexity analysis, led by senior cadets.",
-    description:
-      "A practical bootcamp for students starting out with data structures and algorithms. Every session pairs a short concept walkthrough with live problem solving, so you leave having actually written code.",
-    poster: placeholderPhoto,
-    registerUrl: "[ADD REGISTRATION LINK]",
-    registrationDeadline: "[ADD DEADLINE]",
-    registrationOpen: true,
-    eligibility: ["Open to all NIET students", "No prior experience required"],
-  },
-  {
-    slug: "smart-india-hackathon-participation",
-    name: "Smart India Hackathon",
-    subtitle: "National-level problem solving.",
-    date: "[ADD DATE]",
-    displayDate: "[ADD YEAR]",
-    time: "[ADD TIME]",
-    venue: "[ADD VENUE]",
-    category: "Hackathon",
     status: "completed",
     summary:
-      "Cadets represented NIET at the Smart India Hackathon and were selected among the Top 30 teams.",
+      "A competitive technical event focused on problem solving, logic and coding.",
     description:
-      "Smart India Hackathon is a nationwide initiative where student teams solve real problem statements submitted by ministries, departments and industry. A team from the Coding Cadets community was selected among the Top 30 teams.",
-    poster: placeholderPhoto,
+      "Dominance was a technical competition organized in collaboration with Reboot Club. Participants competed through a series of challenges designed to test their technical knowledge, logic and problem-solving ability.",
+    poster: dominance,
     registerUrl: "[ADD REGISTRATION LINK]",
     registrationDeadline: "Closed",
     registrationOpen: false,
-    winners: [{ position: "Top 30 Teams", name: "[ADD TEAM MEMBER NAMES]" }],
-    gallery: [placeholderPhoto, placeholderPhoto],
   },
+
   {
-    slug: "code-jam",
-    name: "Code Jam",
-    subtitle: "One problem set. Sixty minutes.",
+    slug: "escape-room",
+    name: "Escape Room",
+    subtitle: "Not everyone escapes. Will you?",
+    date: "2025-03-22",
+    displayDate: "March 22, 2025",
+    time: "[ADD TIME]",
+    venue: "Plot-19, NIET, Greater Noida",
+    category: "Competition",
+    status: "completed",
+    summary:
+      "A challenge built around logic, teamwork and solving problems before time runs out.",
+    description:
+      "Escape Room challenged participants to think, solve and work together under pressure. The event was organized at NIET Greater Noida with a focus on problem solving and teamwork.",
+    poster: escapeRoom,
+    registerUrl: "[ADD REGISTRATION LINK]",
+    registrationDeadline: "Closed",
+    registrationOpen: false,
+  },
+
+  {
+    slug: "algo-arena",
+    name: "Algo Arena",
+    subtitle: "Unleash Your Logic. Conquer the Arena!",
     date: "[ADD DATE]",
     displayDate: "[ADD DATE]",
     time: "[ADD TIME]",
     venue: "[ADD VENUE]",
     category: "Coding",
     status: "completed",
-    summary: "A timed sprint of algorithmic problems with a live leaderboard.",
+    summary:
+      "A competitive programming event focused on logic, algorithms and problem solving.",
     description:
-      "Code Jam is a short-format contest built around a curated problem set. Cadets solve against the clock while a live leaderboard tracks every submission.",
-    poster: placeholderPhoto,
+      "Algo Arena was organized by NIET Coding Club as a competitive coding challenge designed to test participants' algorithmic thinking, logical reasoning and programming skills.",
+    poster: algoArena,
     registerUrl: "[ADD REGISTRATION LINK]",
     registrationDeadline: "Closed",
     registrationOpen: false,
-    winners: [{ position: "Winners", name: "[ADD WINNER NAMES]" }],
   },
+
   {
-    slug: "tech-talk-series",
-    name: "Tech Talk Series",
-    subtitle: "Ideas worth discussing.",
+    slug: "cyber-sapiens",
+    name: "Cyber Sapiens",
+    subtitle: "Think. Defend. Conquer.",
     date: "[ADD DATE]",
     displayDate: "[ADD DATE]",
     time: "[ADD TIME]",
     venue: "[ADD VENUE]",
-    category: "Seminar",
+    category: "Competition",
     status: "completed",
     summary:
-      "Open sessions where students and invited speakers break down a technology, a project or a career path.",
+      "A cybersecurity-focused technical challenge designed to test participants' knowledge and problem-solving skills.",
     description:
-      "The Tech Talk Series is an informal seminar format: one topic, one speaker, plenty of questions. Past themes span web development, AI, open source and interview preparation.",
-    poster: placeholderPhoto,
+      "Cyber Sapiens was a cybersecurity-themed event presented by Prayartan, challenging participants to explore technical problems and demonstrate their cybersecurity knowledge.",
+    poster: cyberSapiens,
     registerUrl: "[ADD REGISTRATION LINK]",
     registrationDeadline: "Closed",
     registrationOpen: false,
   },
+
   {
-    slug: "cadet-connect",
-    name: "Cadet Connect",
-    subtitle: "Meet the community.",
+    slug: "battle-of-bots",
+    name: "Battle of Bots",
+    subtitle: "Game on tech: where gamers and techies collide.",
     date: "[ADD DATE]",
     displayDate: "[ADD DATE]",
     time: "[ADD TIME]",
-    venue: "[ADD VENUE]",
-    category: "Community",
+    venue: "D Block",
+    category: "Competition",
     status: "completed",
-    summary: "An onboarding meetup for new members: teams, tracks and what happens next.",
+    summary:
+      "A gaming and technology competition bringing together gamers and tech enthusiasts.",
     description:
-      "Cadet Connect is how new members find their footing — an introduction to the club's tracks, its people and the projects currently in flight.",
-    poster: placeholderPhoto,
+      "Battle of Bots was organized by the Department of CSE in collaboration with Dodge Gaming, bringing together students interested in gaming, technology and competitive challenges.",
+    poster: battleOfBots,
     registerUrl: "[ADD REGISTRATION LINK]",
     registrationDeadline: "Closed",
     registrationOpen: false,
   },
 ];
-
 export const eventFilters = [
   "All",
   "Coding",
