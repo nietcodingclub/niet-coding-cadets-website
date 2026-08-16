@@ -16,7 +16,7 @@ export function AchievementsGrid({ heading = true }: { heading?: boolean }) {
                 Built to <span className="text-brand-bright">achieve.</span>
               </>
             }
-            description="Results from cadets competing beyond the classroom. Every entry here is verified \u2014 placeholders stay until it is."
+            description="Results from cadets competing beyond the classroom. Every entry here is verified, placeholders stay until it is."
           />
         ) : null}
 
