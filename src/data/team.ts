@@ -1,5 +1,7 @@
 import placeholderPhoto from "@/assets/placeholder-photo.jpg";
 import presidentPhoto from "@/assets/team/p.jpeg";
+import meghnaPhoto from "@/assets/team/vp1.jpg";
+import mayankPhoto from "@/assets/team/vp2.png";
 
 export interface TeamMember {
   name: string;
@@ -26,7 +28,7 @@ export const team: TeamMember[] = [
     name: "Meghna Mishra",
     role: "Vice President",
     bio: "Supports club operations, initiatives and student activities.",
-    photo: placeholderPhoto,
+    photo: meghnaPhoto,
     linkedin: "https://www.linkedin.com/in/meghna-mishra-9b4b03297/",
   },
 
@@ -113,7 +115,7 @@ export const spotlights: Spotlight[] = [
     achievement: "[ADD ACHIEVEMENT]",
     story:
       "Add a short, verified story about what the student built, achieved or contributed.",
-    photo: placeholderPhoto,
+    photo: meghnaPhoto,
     linkedin:"https://www.linkedin.com/in/meghna-mishra-9b4b03297/",
   },
   {
@@ -121,7 +123,7 @@ export const spotlights: Spotlight[] = [
     achievement: "[ADD ACHIEVEMENT]",
     story:
       "Add a short, verified story about what the student built, achieved or contributed.",
-    photo: placeholderPhoto,
+    photo: mayankPhoto,
     linkedin: "[ADD LINKEDIN LINK]",
   },
   {
