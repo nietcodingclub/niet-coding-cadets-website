@@ -7,12 +7,13 @@ import { FeaturedEvent } from "@/components/site/FeaturedEvent";
 import { EventsExplorer } from "@/components/site/EventsExplorer";
 import { AchievementsGrid, AchievementTimeline } from "@/components/site/Achievements";
 import { LeadershipFeature, StudentSpotlight } from "@/components/site/Team";
-import { InstagramStrip } from "@/components/site/Gallery";
+import { GalleryGrid, InstagramStrip } from "@/components/site/Gallery";
 import { CodingChallenge, EngagementDeck, SkillExplorer } from "@/components/site/Engagement";
 import { JoinCTA } from "@/components/site/JoinCTA";
 import { Container, Section, SectionHeading } from "@/components/site/primitives";
 import { Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
+import { ResourceTracks } from "@/components/site/Resources";
 
 const title = "NIET Coding Cadets | CSE Technical Club";
 const description =
@@ -72,7 +73,9 @@ function Index() {
       <StudentSpotlight />
       <CodingChallenge />
       <SkillExplorer />
+      <ResourceTracks />
       <EngagementDeck />
+      <GalleryGrid />
       <InstagramStrip />
       <JoinCTA />
     </>

@@ -14,7 +14,7 @@ export function JoinCTA() {
   const ig = socials.instagram;
 
   return (
-    <Section className="relative overflow-hidden">
+    <Section id="join" className="relative overflow-hidden">
       <div className="grid-bg absolute inset-0 opacity-70" aria-hidden="true" />
       <div
         className="absolute left-1/2 top-1/2 h-[26rem] w-[26rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand/15 blur-[130px]"
@@ -27,8 +27,8 @@ export function JoinCTA() {
             Your code. Your ideas. <span className="text-brand-bright">Your community.</span>
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-muted-foreground">
-            Don&apos;t just watch from the sidelines. Build something. Compete. Learn. Lead. Become a
-            Cadet.
+            Don&apos;t just watch from the sidelines. Build something. Compete. Learn. Lead. Become
+            a Cadet.
           </p>
           <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
             <a

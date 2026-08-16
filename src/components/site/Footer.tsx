@@ -4,16 +4,22 @@ import logo from "@/assets/cadets-logo.png";
 import { site, socials, isPlaceholder } from "@/data/site";
 import { Container } from "./primitives";
 
-const footerNav = [
+type FooterNavItem = {
+  to: "/" | "/about" | "/events";
+  label: string;
+  hash?: string;
+};
+
+const footerNav: FooterNavItem[] = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
   { to: "/events", label: "Events" },
-  { to: "/achievements", label: "Achievements" },
-  { to: "/team", label: "Team" },
-  { to: "/gallery", label: "Gallery" },
-  { to: "/resources", label: "Resources" },
-  { to: "/join", label: "Join Us" },
-] as const;
+  { to: "/", hash: "achievements", label: "Achievements" },
+  { to: "/", hash: "team", label: "Team" },
+  { to: "/", hash: "gallery", label: "Gallery" },
+  { to: "/", hash: "resources", label: "Resources" },
+  { to: "/", hash: "join", label: "Join Us" },
+];
 
 const socialIcons = [
   { key: "instagram", Icon: Instagram },
@@ -55,7 +61,9 @@ export function Footer() {
               {footerNav.map((item) => (
                 <li key={item.to}>
                   <Link
+                    key={`${item.to}-${item.hash ?? ""}`}
                     to={item.to}
+                    hash={item.hash}
                     className="text-sm text-muted-foreground transition-colors hover:text-brand-bright"
                   >
                     {item.label}

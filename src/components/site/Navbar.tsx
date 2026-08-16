@@ -6,16 +6,21 @@ import { site } from "@/data/site";
 import { cn } from "@/lib/utils";
 import { Container } from "./primitives";
 
-const nav = [
+type NavItem = {
+  to: "/" | "/about" | "/events";
+  label: string;
+  hash?: string;
+};
+
+const nav: NavItem[] = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
   { to: "/events", label: "Events" },
-  { to: "/achievements", label: "Achievements" },
-  { to: "/team", label: "Team" },
-  { to: "/gallery", label: "Gallery" },
-  { to: "/resources", label: "Resources" },
-] as const;
-
+  { to: "/", hash: "achievements", label: "Achievements" },
+  { to: "/", hash: "team", label: "Team" },
+  { to: "/", hash: "gallery", label: "Gallery" },
+  { to: "/", hash: "resources", label: "Resources" },
+];
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
@@ -60,9 +65,10 @@ export function Navbar() {
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Main">
           {nav.map((item) => (
             <Link
-              key={item.to}
+              key={`${item.to}-${item.hash ?? ""}`}
               to={item.to}
-              activeOptions={{ exact: item.to === "/" }}
+              hash={item.hash}
+              activeOptions={{ exact: item.to === "/" && !item.hash }}
               activeProps={{ className: "text-foreground bg-elevated" }}
               inactiveProps={{ className: "text-muted-foreground" }}
               className="rounded-full px-3.5 py-2 text-sm font-medium transition-colors hover:text-foreground"
@@ -74,7 +80,8 @@ export function Navbar() {
 
         <div className="flex items-center gap-2">
           <Link
-            to="/join"
+            to="/"
+            hash="join"
             className="group hidden items-center gap-2 rounded-full bg-brand px-4 py-2.5 text-sm font-semibold text-brand-foreground transition-all hover:bg-brand-bright hover:shadow-[var(--glow-brand)] sm:inline-flex"
           >
             Join the Club
@@ -101,10 +108,11 @@ export function Navbar() {
         <Container className="flex flex-col gap-1 py-4">
           {nav.map((item) => (
             <Link
-              key={item.to}
+              key={`${item.to}-${item.hash ?? ""}`}
               to={item.to}
+              hash={item.hash}
+              activeOptions={{ exact: item.to === "/" && !item.hash }}
               onClick={() => setOpen(false)}
-              activeOptions={{ exact: item.to === "/" }}
               activeProps={{ className: "text-brand-bright" }}
               className="rounded-lg px-3 py-3 text-base font-medium text-muted-foreground transition-colors hover:bg-elevated hover:text-foreground"
             >
@@ -112,7 +120,8 @@ export function Navbar() {
             </Link>
           ))}
           <Link
-            to="/join"
+            to="/"
+            hash="join"
             onClick={() => setOpen(false)}
             className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-brand px-4 py-3 text-sm font-semibold text-brand-foreground"
           >

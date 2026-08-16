@@ -30,7 +30,7 @@ function SocialLink({
 
 export function LeadershipFeature() {
   return (
-    <Section>
+    <Section id="team">
       <Container>
         <Reveal>
           <div className="relative overflow-hidden rounded-3xl border border-border bg-card">
@@ -123,7 +123,7 @@ export function TeamGrid() {
 
 export function StudentSpotlight() {
   return (
-    <Section>
+    <Section id="team">
       <Container>
         <SectionHeading
           eyebrow="Spotlight"
