@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Menu, X, ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import logo from "@/assets/cadets-logo.png";
+import nietLogo from "@/assets/niet-logo.png";
 import { site } from "@/data/site";
 import { cn } from "@/lib/utils";
 import { Container } from "./primitives";
@@ -55,7 +56,27 @@ export function Navbar() {
           onClick={() => setOpen(false)}
           aria-label={`${site.name} home`}
         >
-          <img src={logo} alt="" width={32} height={32} className="h-8 w-8" />
+          <div className="flex items-center gap-2">
+            <img
+              src={nietLogo}
+              alt="NIET"
+              width={52}
+              height={32}
+              className="h-7 w-auto object-contain"
+            />
+
+            <div className="h-7 w-px bg-border" aria-hidden="true" />
+
+            <img
+              src={logo}
+              alt="NIET Coding Cadets"
+              width={48}
+              height={40}
+              className="h-9 w-12 rounded-md object-cover"
+              loading="eager"
+            />
+          </div>
+
           <span className="font-display text-[0.82rem] font-bold uppercase leading-none tracking-[0.14em] sm:text-sm">
             NIET Coding
             <span className="block text-brand-bright">Cadets</span>

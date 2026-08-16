@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Instagram, Linkedin, Github, MessageCircle } from "lucide-react";
 import logo from "@/assets/cadets-logo.png";
+import nietLogo from "@/assets/niet-logo.png";
 import { site, socials, isPlaceholder } from "@/data/site";
 import { Container } from "./primitives";
 
@@ -35,11 +36,37 @@ export function Footer() {
       <Container className="relative py-14 sm:py-16">
         <div className="grid gap-10 md:grid-cols-[1.4fr_1fr_1fr]">
           <div>
-            <div className="flex items-center gap-3">
-              <img src={logo} alt="" loading="lazy" width={40} height={40} className="h-10 w-10" />
-              <span className="font-display text-lg font-bold uppercase tracking-[0.12em]">
-                {site.name}
-              </span>
+            <div className="flex flex-wrap items-center gap-4">
+              <img
+                src={logo}
+                alt="NIET Coding Cadets"
+                loading="lazy"
+                width={80}
+                height={56}
+                className="h-14 w-20 rounded-lg object-cover"
+              />
+
+              <div className="h-10 w-px bg-border" aria-hidden="true" />
+
+              <div>
+                <p className="font-display text-lg font-bold uppercase tracking-[0.12em]">
+                  {site.name}
+                </p>
+                <p className="mt-1 font-mono text-[0.65rem] uppercase tracking-[0.15em] text-brand-bright">
+                  CSE Technical Club
+                </p>
+              </div>
+
+              <div className="ml-0 sm:ml-2">
+                <img
+                  src={nietLogo}
+                  alt="Noida Institute of Engineering and Technology"
+                  loading="lazy"
+                  width={110}
+                  height={50}
+                  className="h-12 w-auto object-contain"
+                />
+              </div>
             </div>
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted-foreground">
               Official CSE Technical Club
