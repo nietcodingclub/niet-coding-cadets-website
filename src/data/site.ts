@@ -15,7 +15,7 @@ export const site = {
     "NIET Coding Cadets is the CSE technical community at NIET, bringing together students passionate about coding, technology, problem-solving and innovation.",
   /** Replace with the real registration / membership form URL. */
   joinUrl: "[ADD REGISTRATION LINK]",
-  contactEmail: "[ADD CLUB EMAIL]",
+  contactEmail: "nietcodingclub@gmail.com",
 } as const;
 
 /** Social links — replace placeholders with the official handles/URLs. */
@@ -25,20 +25,35 @@ export const socials = {
     handle: "@niet.coding.cadets",
     url: "https://www.instagram.com/niet.coding.cadets/",
   },
+
   linkedin: {
     label: "LinkedIn",
-    handle: "[ADD LINKEDIN HANDLE]",
-    url: "[ADD LINKEDIN LINK]",
+    handle: "NIET Coding Cadets",
+    url: "https://www.linkedin.com/company/niet-coding-cadets/",
   },
+
   github: {
     label: "GitHub",
-    handle: "[ADD GITHUB HANDLE]",
-    url: "[ADD GITHUB LINK]",
+    handle: "@nietcodingclub",
+    url: "https://github.com/nietcodingclub",
   },
+
   whatsapp: {
     label: "WhatsApp Community",
-    handle: "[ADD WHATSAPP COMMUNITY]",
-    url: "[ADD WHATSAPP LINK]",
+    handle: "Join our community",
+    url: "https://chat.whatsapp.com/JXgxzkt91VzLogg9cn0TeP",
+  },
+
+  whatsappUpdates: {
+    label: "Event Updates",
+    handle: "Get event updates",
+    url: "https://chat.whatsapp.com/Fj0TR8aVGNMGFWctJ4q2d2?s=cl&p=a&ilr=0",
+  },
+
+  whatsappDiscussion: {
+    label: "Problem Discussion",
+    handle: "Discuss coding problems",
+    url: "https://chat.whatsapp.com/D0qf5eCSvVRBQRaNr2kNgZ?s=cl&p=a&ilr=0",
   },
 } as const;
 
@@ -60,11 +75,11 @@ export const stats: {
   label: string;
   note?: string;
 }[] = [
-  { value: "150+", target: 150, suffix: "+", label: "Students Mentored", note: "Peer learning sessions" },
-  { value: "XX+", label: "Events & Activities", note: "[ADD CONFIRMED COUNT]" },
-  { value: "Top 30", label: "Smart India Hackathon", note: "Selected among the Top 30 teams" },
-  { value: "\u221E", label: "Ideas & Possibilities", note: "Always shipping" },
-];
+    { value: "150+", target: 150, suffix: "+", label: "Students Mentored", note: "Peer learning sessions" },
+    { value: "XX+", label: "Events & Activities", note: "[ADD CONFIRMED COUNT]" },
+    { value: "Top 30", label: "Smart India Hackathon", note: "Selected among the Top 30 teams" },
+    { value: "\u221E", label: "Ideas & Possibilities", note: "Always shipping" },
+  ];
 
 /** The Learn -> Grow journey shown in the About section. */
 export const journey = [
