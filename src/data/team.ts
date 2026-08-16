@@ -1,4 +1,5 @@
 import placeholderPhoto from "@/assets/placeholder-photo.jpg";
+import presidentPhoto from "@/assets/team/p.jpeg";
 
 export interface TeamMember {
   name: string;
@@ -7,71 +8,91 @@ export interface TeamMember {
   photo: string;
   linkedin?: string;
   github?: string;
-  /** Set true for the large leadership feature card. */
   lead?: boolean;
 }
 
-/**
- * Team roster. Names are intentionally placeholders — replace each entry
- * with the real member details. Photos: drop files in src/assets and import.
- */
 export const team: TeamMember[] = [
   {
-    name: "[ADD TEAM MEMBER]",
+    name: "Tanmay Awasthi",
     role: "President",
-    bio: "Leads the club's direction, events calendar and department coordination.",
-    photo: placeholderPhoto,
-    linkedin: "[ADD LINKEDIN LINK]",
-    github: "[ADD GITHUB LINK]",
+    bio: "Leads NIET Coding Cadets, shaping the club's direction, initiatives, events and student community.",
+    photo: presidentPhoto,
+    linkedin: "https://www.linkedin.com/in/tanmay-awasthi-programmer4/",
+    github: "https://github.com/Tanmay0405",
     lead: true,
   },
+
   {
-    name: "[ADD TEAM MEMBER]",
+    name: "Meghna Mishra",
     role: "Vice President",
-    bio: "Supports club operations and keeps every track moving.",
+    bio: "Supports club operations, initiatives and student activities.",
+    photo: placeholderPhoto,
+    linkedin: "https://www.linkedin.com/in/meghna-mishra-9b4b03297/",
+  },
+
+  {
+    name: "Mayank Singh",
+    role: "Vice President",
+    bio: "Supports club operations, initiatives and student activities.",
     photo: placeholderPhoto,
     linkedin: "[ADD LINKEDIN LINK]",
   },
+
   {
-    name: "[ADD TEAM MEMBER]",
+    name: "Rundransh Chandel",
     role: "Technical Head",
-    bio: "Owns technical sessions, contest problem sets and project mentoring.",
+    bio: "Leads technical sessions, coding activities, projects and technical initiatives.",
     photo: placeholderPhoto,
-    linkedin: "[ADD LINKEDIN LINK]",
+    linkedin: "https://www.linkedin.com/in/rudransh-chandel/",
     github: "[ADD GITHUB LINK]",
   },
+
   {
-    name: "[ADD TEAM MEMBER]",
+    name: "[ADD NAME]",
     role: "Event Head",
-    bio: "Plans and runs competitions, workshops and hackathons end to end.",
+    bio: "Plans and coordinates competitions, workshops, hackathons and club events.",
     photo: placeholderPhoto,
     linkedin: "[ADD LINKEDIN LINK]",
   },
+
   {
-    name: "[ADD TEAM MEMBER]",
+    name: "[ADD NAME]",
     role: "Design Head",
-    bio: "Shapes the club's visual identity, posters and event branding.",
+    bio: "Handles the club's visual identity, posters, creatives and event branding.",
     photo: placeholderPhoto,
     linkedin: "[ADD LINKEDIN LINK]",
   },
+
   {
-    name: "[ADD TEAM MEMBER]",
+    name: "[ADD NAME]",
     role: "Social Media Head",
-    bio: "Runs outreach, announcements and the club's online presence.",
+    bio: "Manages social media, announcements, outreach and digital presence.",
     photo: placeholderPhoto,
     linkedin: "[ADD LINKEDIN LINK]",
   },
+
   {
-    name: "[ADD TEAM MEMBER]",
-    role: "Core Team",
-    bio: "Supports sessions, logistics and community activities.",
+    name: "[ADD NAME]",
+    role: "Coordinator",
+    bio: "Supports club sessions, events, coordination and community activities.",
     photo: placeholderPhoto,
+    linkedin: "[ADD LINKEDIN LINK]",
   },
+
   {
-    name: "[ADD TEAM MEMBER]",
-    role: "Core Team",
-    bio: "Supports sessions, logistics and community activities.",
+    name: "[ADD NAME]",
+    role: "Coordinator",
+    bio: "Supports club sessions, events, coordination and community activities.",
     photo: placeholderPhoto,
+    linkedin: "[ADD LINKEDIN LINK]",
+  },
+
+  {
+    name: "[ADD NAME]",
+    role: "Coordinator",
+    bio: "Supports club sessions, events, coordination and community activities.",
+    photo: placeholderPhoto,
+    linkedin: "[ADD LINKEDIN LINK]",
   },
 ];
 
@@ -86,30 +107,29 @@ export interface Spotlight {
   github?: string;
 }
 
-/** Student spotlight entries — add real, verified stories only. */
 export const spotlights: Spotlight[] = [
   {
-    name: "[ADD STUDENT NAME]",
+    name: "Meghna Mishra",
     achievement: "[ADD ACHIEVEMENT]",
     story:
-      "Placeholder spotlight. Replace with a short, verified story: what they built or won, and what it took.",
+      "Add a short, verified story about what the student built, achieved or contributed.",
+    photo: placeholderPhoto,
+    linkedin:"https://www.linkedin.com/in/meghna-mishra-9b4b03297/",
+  },
+  {
+    name: "Mayank Singh",
+    achievement: "[ADD ACHIEVEMENT]",
+    story:
+      "Add a short, verified story about what the student built, achieved or contributed.",
     photo: placeholderPhoto,
     linkedin: "[ADD LINKEDIN LINK]",
   },
   {
-    name: "[ADD STUDENT NAME]",
+    name: "Rundransh Chandel",
     achievement: "[ADD ACHIEVEMENT]",
     story:
-      "Placeholder spotlight. Replace with a short, verified story: what they built or won, and what it took.",
+      "Add a short, verified story about what the student built, achieved or contributed.",
     photo: placeholderPhoto,
-    github: "[ADD GITHUB LINK]",
-  },
-  {
-    name: "[ADD STUDENT NAME]",
-    achievement: "[ADD ACHIEVEMENT]",
-    story:
-      "Placeholder spotlight. Replace with a short, verified story: what they built or won, and what it took.",
-    photo: placeholderPhoto,
-    linkedin: "[ADD LINKEDIN LINK]",
+    linkedin: "https://www.linkedin.com/in/rudransh-chandel/",
   },
 ];
