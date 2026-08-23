@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowRight, ArrowDown } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
-import { site } from "@/data/site";
+import { site, isPlaceholder } from "@/data/site";
 import { Container, Pill } from "./primitives";
 import { HeroTerminal } from "./HeroTerminal";
 
@@ -66,13 +66,16 @@ export function Hero() {
           </p>
 
           <div className="mt-9 flex flex-wrap items-center gap-3">
-            <Link
-              to="/join"
-              className="group inline-flex items-center gap-2 rounded-full bg-brand px-6 py-3.5 text-sm font-semibold uppercase tracking-wider text-brand-foreground transition-all hover:bg-brand-bright hover:shadow-[var(--glow-brand)]"
+            <a
+              href={isPlaceholder(site.joinUrl) ? undefined : site.joinUrl}
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-disabled={isPlaceholder(site.joinUrl)}
+              className="group inline-flex items-center gap-2 rounded-full bg-brand px-6 py-3.5 text-sm font-semibold uppercase tracking-wider text-brand-foreground transition-all hover:bg-brand-bright hover:shadow-[var(--glow-brand)] aria-disabled:cursor-not-allowed aria-disabled:opacity-70"
             >
               Join the Cadets
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </Link>
+            </a>
             <Link
               to="/events"
               className="inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-6 py-3.5 text-sm font-semibold uppercase tracking-wider text-foreground backdrop-blur transition-colors hover:border-brand/50 hover:text-brand-bright"

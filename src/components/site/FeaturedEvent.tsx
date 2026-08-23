@@ -116,10 +116,6 @@ export function FeaturedEvent() {
                       ))}
                     </dl>
                   )}
-                  <p className="mt-5 text-xs leading-relaxed text-muted-foreground">
-                    A countdown appears automatically once a confirmed ISO date is set in
-                    <span className="font-mono text-brand-bright"> src/data/events.ts</span>.
-                  </p>
                 </div>
               </div>
             </div>

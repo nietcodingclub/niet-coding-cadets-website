@@ -14,7 +14,7 @@ export const site = {
   description:
     "NIET Coding Cadets is the CSE technical community at NIET, bringing together students passionate about coding, technology, problem-solving and innovation.",
   /** Replace with the real registration / membership form URL. */
-  joinUrl: "[ADD REGISTRATION LINK]",
+  joinUrl: "https://forms.gle/h7a4bjCYn41SZEuw6",
   contactEmail: "nietcodingclub@gmail.com",
 } as const;
 

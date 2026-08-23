@@ -3,7 +3,7 @@ import { Menu, X, ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import logo from "@/assets/cadets-logo.png";
 import nietLogo from "@/assets/niet-logo.png";
-import { site } from "@/data/site";
+import { site, isPlaceholder } from "@/data/site";
 import { cn } from "@/lib/utils";
 import { Container } from "./primitives";
 
@@ -11,17 +11,20 @@ type NavItem = {
   to: "/" | "/about" | "/events";
   label: string;
   hash?: string;
+  /** When true, this item never gets the active capsule (scroll anchors). */
+  noActive?: boolean;
 };
 
 const nav: NavItem[] = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
   { to: "/events", label: "Events" },
-  { to: "/", hash: "achievements", label: "Achievements" },
-  { to: "/", hash: "team", label: "Team" },
-  { to: "/", hash: "gallery", label: "Gallery" },
-  { to: "/", hash: "resources", label: "Resources" },
+  { to: "/", hash: "achievements", label: "Achievements", noActive: true },
+  { to: "/", hash: "team", label: "Team", noActive: true },
+  { to: "/", hash: "gallery", label: "Gallery", noActive: true },
+  { to: "/", hash: "resources", label: "Resources", noActive: true },
 ];
+
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
@@ -83,14 +86,21 @@ export function Navbar() {
           </span>
         </Link>
 
+        {/* Desktop nav */}
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Main">
           {nav.map((item) => (
             <Link
               key={`${item.to}-${item.hash ?? ""}`}
               to={item.to}
-              hash={item.hash}
-              activeOptions={{ exact: item.to === "/" && !item.hash }}
-              activeProps={{ className: "text-foreground bg-elevated" }}
+              // Only spread hash when it actually exists — avoids passing
+              // undefined to a prop that doesn't accept it (exactOptionalPropertyTypes)
+              {...(item.hash ? { hash: item.hash } : {})}
+              activeOptions={{ exact: true, includeHash: false }}
+              activeProps={{
+                className: item.noActive
+                  ? "text-muted-foreground"
+                  : "text-foreground bg-elevated",
+              }}
               inactiveProps={{ className: "text-muted-foreground" }}
               className="rounded-full px-3.5 py-2 text-sm font-medium transition-colors hover:text-foreground"
             >
@@ -100,14 +110,16 @@ export function Navbar() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <Link
-            to="/"
-            hash="join"
-            className="group hidden items-center gap-2 rounded-full bg-brand px-4 py-2.5 text-sm font-semibold text-brand-foreground transition-all hover:bg-brand-bright hover:shadow-[var(--glow-brand)] sm:inline-flex"
+          <a
+            href={isPlaceholder(site.joinUrl) ? undefined : site.joinUrl}
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-disabled={isPlaceholder(site.joinUrl)}
+            className="group hidden items-center gap-2 rounded-full bg-brand px-4 py-2.5 text-sm font-semibold text-brand-foreground transition-all hover:bg-brand-bright hover:shadow-[var(--glow-brand)] aria-disabled:cursor-not-allowed aria-disabled:opacity-70 sm:inline-flex"
           >
             Join the Club
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-          </Link>
+          </a>
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
@@ -120,6 +132,7 @@ export function Navbar() {
         </div>
       </Container>
 
+      {/* Mobile nav drawer */}
       <div
         className={cn(
           "overflow-hidden border-border bg-background/95 backdrop-blur-xl transition-[max-height,opacity] duration-300 lg:hidden",
@@ -131,23 +144,29 @@ export function Navbar() {
             <Link
               key={`${item.to}-${item.hash ?? ""}`}
               to={item.to}
-              hash={item.hash}
-              activeOptions={{ exact: item.to === "/" && !item.hash }}
+              {...(item.hash ? { hash: item.hash } : {})}
+              activeOptions={{ exact: true, includeHash: false }}
               onClick={() => setOpen(false)}
-              activeProps={{ className: "text-brand-bright" }}
+              activeProps={{
+                className: item.noActive
+                  ? "text-muted-foreground"
+                  : "text-brand-bright",
+              }}
               className="rounded-lg px-3 py-3 text-base font-medium text-muted-foreground transition-colors hover:bg-elevated hover:text-foreground"
             >
               {item.label}
             </Link>
           ))}
-          <Link
-            to="/"
-            hash="join"
+          <a
+            href={isPlaceholder(site.joinUrl) ? undefined : site.joinUrl}
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-disabled={isPlaceholder(site.joinUrl)}
             onClick={() => setOpen(false)}
-            className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-brand px-4 py-3 text-sm font-semibold text-brand-foreground"
+            className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-brand px-4 py-3 text-sm font-semibold text-brand-foreground aria-disabled:cursor-not-allowed aria-disabled:opacity-70"
           >
             Join the Club <ArrowRight className="h-4 w-4" />
-          </Link>
+          </a>
         </Container>
       </div>
     </header>
