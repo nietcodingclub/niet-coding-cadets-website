@@ -1,27 +1,47 @@
-````md
-# NIET Coding Cadets Website — Developer Handover
+# NIET Coding Cadets Website — Developer Guide
 
-Welcome to the NIET Coding Cadets website.
+Welcome to the **NIET Coding Cadets website**.
 
-This document is for future Cadets who will maintain, update and improve the website.
+This guide is for future Cadets who will maintain, update and improve the website.
 
-## Quick Rule
-
-**CONTENT → `src/data/`**  
-**IMAGES → `src/assets/`**  
-**UI → `src/components/`**  
-**PAGES → `src/routes/`**  
-**STYLES → `src/styles.css`**  
-**BUILD / DEPLOYMENT → configuration files**
+You don't need to understand the entire project before making a change.  
+Just find the section you want to update and follow the instructions.
 
 ---
 
-## Project
+## Quick Guide
 
-**Live Website:**  
+| I want to change... | Go to... |
+|---|---|
+| Club information | `src/data/site.ts` |
+| Events | `src/data/events.ts` |
+| Event posters | `src/assets/events/` |
+| Achievements | `src/data/achievements.ts` |
+| Team members | `src/data/team.ts` |
+| Gallery | `src/data/gallery.ts` |
+| Website design/UI | `src/components/` |
+| Pages | `src/routes/` |
+| Global styles | `src/styles.css` |
+| Images | `src/assets/` |
+
+**Simple rule:**
+
+> **Content → `src/data/`**  
+> **Images → `src/assets/`**  
+> **UI → `src/components/`**  
+> **Pages → `src/routes/`**  
+> **Styles → `src/styles.css`**
+
+---
+
+# 1. Project
+
+### Live Website
+
 https://nietcodingclub-niet-coding-cadets-website.nietcodingcadets.workers.dev/
 
-**GitHub:**  
+### GitHub Repository
+
 https://github.com/nietcodingclub/niet-coding-cadets-website
 
 ### Tech Stack
@@ -37,30 +57,55 @@ https://github.com/nietcodingclub/niet-coding-cadets-website
 
 ---
 
-# 1. Club Information
+# 2. How to Run the Website
+
+First, install the dependencies:
+
+```bash
+npm install
+```
+
+Then start the development server:
+
+```bash
+npm run dev
+```
+
+Open the local URL shown in the terminal.
+
+Usually it will look something like:
+
+```text
+http://localhost:3000
+```
+
+Keep the terminal running while working on the website.
+
+---
+
+# 3. Changing Club Information
 
 ### File
 
 ```text
 src/data/site.ts
-````
+```
 
-Use this for general club information such as:
+Use this file for information such as:
 
-* Club name
-* Department
-* Description
-* Location
-* Statistics
-* Social links
-* Contact information
-* Join links
+- Club name
+- Department
+- Description
+- Statistics
+- Social media links
+- Contact information
+- Join links
 
-If you are changing information **about the club itself**, check this file first.
+If you want to change something **about the club itself**, check this file first.
 
 ---
 
-# 2. Events
+# 4. Adding or Updating Events
 
 ### File
 
@@ -68,32 +113,34 @@ If you are changing information **about the club itself**, check this file first
 src/data/events.ts
 ```
 
-This is the main file for adding/updating events.
+This is the main file for events.
 
 You may need to update:
 
-* Event name
-* Date
-* Time
-* Venue
-* Category
-* Status
-* Description
-* Poster
-* Registration link
-* Deadline
-* Rules
-* Eligibility
-* Prizes
-* Winners
+- Event name
+- Date
+- Time
+- Venue
+- Category
+- Status
+- Description
+- Poster
+- Registration link
+- Deadline
+- Rules
+- Eligibility
+- Prizes
+- Winners
 
-Before adding an event, look at existing events and follow the same structure.
+### Before adding an event
 
-Do not randomly create new fields unless the application requires them.
+Look at an existing event in the file and follow the same structure.
+
+Don't randomly add new fields unless the website actually needs them.
 
 ---
 
-# 3. Event Images
+# 5. Adding Event Posters
 
 ### Folder
 
@@ -101,9 +148,9 @@ Do not randomly create new fields unless the application requires them.
 src/assets/events/
 ```
 
-Put event posters/images here.
+Put event posters/images in this folder.
 
-Then import them into:
+Then import the image into:
 
 ```text
 src/data/events.ts
@@ -115,17 +162,21 @@ Example:
 import newEvent from "@/assets/events/new-event.png";
 ```
 
-Then:
+Then use it in the event:
 
 ```ts
 poster: newEvent,
 ```
 
-Keep image sizes reasonable. Avoid unnecessarily huge files.
+### Tip
+
+Try to keep image sizes reasonable.
+
+Don't upload a huge image if a smaller version will look exactly the same on the website.
 
 ---
 
-# 4. Achievements
+# 6. Updating Achievements
 
 ### File
 
@@ -135,45 +186,52 @@ src/data/achievements.ts
 
 Use this for:
 
-* Club achievements
-* Competition results
-* Awards
-* Rankings
-* Major milestones
-* Verified student/team achievements
+- Club achievements
+- Competition results
+- Awards
+- Rankings
+- Major milestones
+- Verified student/team achievements
 
-### IMPORTANT
+### Important
 
 This is an official club website.
 
-**Never add fake or unverified achievements, statistics, awards, rankings or results.**
+**Never add fake or unverified information.**
 
-Verify information before publishing it.
+Before publishing an achievement, make sure the result, ranking, award or statistic is actually correct.
 
 ---
 
-# 5. Team
+# 7. Updating the Team
 
-Team information should be maintained in the relevant team data/component files under:
+### Main file
 
 ```text
-src/data/
-src/components/
+src/data/team.ts
 ```
 
-When leadership changes:
+You may also need to check:
 
-* Update names
-* Update roles
-* Update photos
-* Update social links
-* Remove outdated information
+```text
+src/components/site/Team.tsx
+```
 
-Keep the current team accurate.
+When the club leadership changes, update:
+
+- Names
+- Roles
+- Photos
+- Social links
+- Other relevant information
+
+Remove outdated information when necessary.
+
+Keep the current team information accurate.
 
 ---
 
-# 6. Gallery
+# 8. Updating the Gallery
 
 ### File
 
@@ -181,119 +239,353 @@ Keep the current team accurate.
 src/data/gallery.ts
 ```
 
-Gallery images should be stored under:
+Images are generally stored inside:
 
 ```text
 src/assets/
 ```
 
-Current categories:
+Gallery content can include:
 
-* Events
-* Workshops
-* Competitions
-* Team
+- Events
+- Workshops
+- Competitions
+- Team activities
 
-Replace placeholder images with real club photographs whenever possible.
+Whenever possible, use real club photographs instead of placeholders.
 
 ---
 
-# 7. Social Links
+# 9. Updating Social Links
 
-Check:
+Start with:
 
 ```text
 src/data/site.ts
 ```
 
-before changing Instagram, LinkedIn, GitHub, WhatsApp or other community links.
+Check this file before changing:
 
-Avoid hard-coding the same link in multiple components.
+- Instagram
+- LinkedIn
+- GitHub
+- WhatsApp
+- Other club/community links
+
+Try not to hard-code the same link in multiple places.
+
+If a link is already stored in the site's data, reuse it.
 
 ---
 
-# 8. UI Changes
+# 10. Changing the Website Design
 
-For changes to how the website looks or behaves, check:
+If you want to change how something **looks or behaves**, check:
 
 ```text
 src/components/
 ```
 
-For page-level changes, check:
+For example:
+
+```text
+src/components/site/Navbar.tsx
+src/components/site/Hero.tsx
+src/components/site/Team.tsx
+```
+
+If you're changing an entire page, check:
 
 ```text
 src/routes/
 ```
 
-Before creating a new component, check whether an existing component can be reused.
+### Before creating a new component
+
+First check whether an existing component can be reused.
+
+Keeping the code reusable makes the website easier for the next team to maintain.
 
 ---
 
-# 9. Styling
+# 11. Changing Global Styles
 
-Global styles:
+### File
 
 ```text
 src/styles.css
 ```
 
-The existing design is intentionally:
+This is where global styling is handled.
 
-* Dark
-* Technical
-* Premium
-* Black/Red
-* Developer focused
+The current website uses a:
 
-Keep the design consistent when adding new sections.
+- Dark
+- Technical
+- Premium
+- Black/Red
+- Developer-focused
+
+visual style.
+
+When adding a new section, try to keep it visually consistent with the existing website.
 
 ---
 
-# 10. Local Development
+# 12. Images
 
-Install dependencies:
+Images are generally stored in:
 
-```bash
-npm install
+```text
+src/assets/
 ```
 
-Run locally:
+For event images:
+
+```text
+src/assets/events/
+```
+
+For team images:
+
+```text
+src/assets/team/
+```
+
+Before adding an image:
+
+- Check its size
+- Use a sensible file format
+- Give it a meaningful filename
+- Avoid unnecessarily large files
+
+For example:
+
+```text
+battle-of-bots.png
+```
+
+is better than:
+
+```text
+IMG_2026_08_23_123456_final_final2.png
+```
+
+---
+
+# 13. Testing Your Changes
+
+After making changes, first check the website locally.
+
+Run:
 
 ```bash
 npm run dev
 ```
 
-Before pushing changes, always test the website locally.
+Then check:
+
+- Homepage
+- Pages you changed
+- Buttons
+- Links
+- Images
+- Mobile layout
+- New content
+
+If something looks broken, fix it before pushing.
 
 ---
 
-# 11. Production Build
+# 14. Check the Production Build
 
-Run:
+Before pushing a significant change, run:
 
 ```bash
 npm run build
 ```
 
-If the build fails, **do not deploy/push the broken version.**
+You want to see a successful build.
 
-Fix the error first.
+If the build fails:
+
+**Stop and fix the problem before pushing.**
+
+Don't knowingly push a broken build.
 
 ---
 
-# 12. Git Workflow
+# 15. Git Workflow
 
-Before starting work:
+Before starting work, get the latest changes:
 
 ```bash
 git pull origin main
 ```
 
-After making changes:
+Then make your changes.
+
+Check what changed:
 
 ```bash
 git status
+```
+
+Add your changes:
+
+```bash
+git add .
+```
+
+Create a commit:
+
+```bash
+git commit -m "Describe your change"
+```
+
+Push your changes:
+
+```bash
+git push origin main
+```
+
+---
+
+# 16. Automatic Deployment
+
+The website is connected to **Cloudflare Workers Builds**.
+
+That means you normally **do not need to manually deploy the website**.
+
+After:
+
+```bash
+git push origin main
+```
+
+Cloudflare automatically:
+
+1. Detects the GitHub push
+2. Installs dependencies
+3. Builds the project
+4. Deploys the new version
+
+So the normal workflow is simply:
+
+```text
+Make changes
+     ↓
+Test locally
+     ↓
+npm run build
+     ↓
+git add .
+     ↓
+git commit
+     ↓
+git push origin main
+     ↓
+Cloudflare automatically deploys
+     ↓
+Live website updated
+```
+
+**Do not manually run Cloudflare deployment commands unless you know why you need them.**
+
+---
+
+# 17. Working With Other Members
+
+Before you start working:
+
+```bash
+git pull origin main
+```
+
+This is important because someone else may have pushed changes before you.
+
+If Git reports a conflict, **don't randomly delete files or use force commands**.
+
+Ask someone who understands Git to help resolve the conflict.
+
+---
+
+# 18. Using Branches
+
+For small content changes, working directly on `main` may be acceptable for this project.
+
+For larger features, use a separate branch:
+
+```bash
+git checkout -b feature/your-feature-name
+```
+
+Example:
+
+```bash
+git checkout -b feature/events-filter
+```
+
+Then work on your changes and test them.
+
+---
+
+# 19. IMPORTANT — Don't Do This
+
+Avoid using:
+
+```bash
+git push --force
+```
+
+especially on `main`.
+
+Force pushing can overwrite other people's work.
+
+Also don't delete or modify configuration files just because you don't understand them.
+
+---
+
+# 20. Files to Be Careful With
+
+Be careful when changing:
+
+```text
+vite.config.ts
+package.json
+tsconfig.json
+src/server.ts
+```
+
+These files affect the project's:
+
+- Build
+- Framework configuration
+- TypeScript configuration
+- Server
+- Deployment
+
+If the website is already working, **don't change the infrastructure without a reason.**
+
+Understand the change first.
+
+---
+
+# 21. Before You Push
+
+Use this checklist:
+
+```text
+[ ] I tested my changes locally
+[ ] New information is correct
+[ ] Images load correctly
+[ ] Buttons work
+[ ] Links work
+[ ] Mobile layout looks okay
+[ ] No obvious console errors
+[ ] npm run build succeeds
+[ ] git status looks correct
+[ ] I pulled the latest changes before starting
 ```
 
 Then:
@@ -304,118 +596,164 @@ git commit -m "Describe your change"
 git push origin main
 ```
 
-For larger features, preferably create a branch:
-
-```bash
-git checkout -b feature/your-feature-name
-```
-
-### DO NOT casually use:
-
-```bash
-git push --force
-```
-
 ---
 
-# 13. Files You Should Not Modify Casually
+# 22. Common Tasks
 
-Be careful with:
+### "I want to add a new event."
+
+Go to:
 
 ```text
-vite.config.ts
-package.json
-tsconfig.json
-src/server.ts
+src/data/events.ts
 ```
 
-These affect the application's build, framework or deployment.
+Add the event.
 
-If the website is already working, **don't change the infrastructure just for the sake of changing it.**
-
-Understand what a configuration change does before making it.
-
----
-
-# 14. Before Pushing
-
-Use this checklist:
+If it has a poster:
 
 ```text
-[ ] Website works locally
-[ ] New information is verified
-[ ] Images load correctly
-[ ] Buttons work
-[ ] Links work
-[ ] Mobile layout checked
-[ ] No obvious console errors
-[ ] npm run build succeeds
-[ ] git status checked
+src/assets/events/
 ```
 
-Then push.
+Add the image and import it into `events.ts`.
 
 ---
 
-# 15. Future Improvements
+### "I want to change the President/VP."
 
-Possible improvements:
+Start here:
 
-* Replace remaining placeholder images
-* Improve mobile responsiveness
-* Improve accessibility
-* Improve SEO
-* Optimize images
-* Add student project showcase
-* Add technical blog
-* Add coding challenges
-* Add leaderboard
-* Add certificate verification
-* Add better event management
-* Add alumni/Cadets section
-* Add admin panel
+```text
+src/data/team.ts
+```
+
+Update the person's:
+
+- Name
+- Role
+- Photo
+- Social links
+
+Then check the Team page to make sure everything looks correct.
+
+---
+
+### "I want to change the homepage."
+
+Start by checking:
+
+```text
+src/routes/
+src/components/site/
+```
+
+Find the component used by the homepage and make the change there.
+
+---
+
+### "I want to change colors/fonts/layout."
+
+Check:
+
+```text
+src/styles.css
+```
+
+and the relevant component inside:
+
+```text
+src/components/
+```
+
+---
+
+### "I pushed my changes. When will the website update?"
+
+Cloudflare automatically starts a deployment after the GitHub push.
+
+Check the Cloudflare **Deployments/Builds** section if you want to see whether the deployment succeeded.
+
+---
+
+# 23. Future Ideas
+
+The website can continue to grow.
+
+Some possible improvements:
+
+- Replace remaining placeholder images
+- Improve mobile responsiveness
+- Improve accessibility
+- Improve SEO
+- Optimize images
+- Add student project showcase
+- Add technical blog
+- Add coding challenges
+- Add leaderboard
+- Add certificate verification
+- Improve event management
+- Add alumni/Cadets section
+- Add an admin panel
 
 Don't try to build everything at once.
 
-Keep the existing website stable first.
+**Keep the existing website stable first.**
 
 ---
 
-# 16. Most Important Rule
+# 24. The Most Important Thing
 
-If you remember only one thing:
+You don't need to understand the entire project before contributing.
 
-> **If you are changing CONTENT, start with `src/data/`.**
->
-> **If you are changing the UI, check `src/components/`.**
->
-> **If you are changing a PAGE, check `src/routes/`.**
->
-> **If you are changing IMAGES, check `src/assets/`.**
+Remember:
 
-And always test before pushing.
+```text
+CONTENT
+   ↓
+src/data/
+
+IMAGES
+   ↓
+src/assets/
+
+UI / COMPONENTS
+   ↓
+src/components/
+
+PAGES
+   ↓
+src/routes/
+
+GLOBAL STYLES
+   ↓
+src/styles.css
+```
+
+When in doubt:
+
+**Look at an existing example and follow its structure.**
+
+And always test your changes before pushing.
 
 ---
 
-## Final Note
+# Final Note
 
-This website belongs to the NIET Coding Cadets community.
+This website belongs to the **NIET Coding Cadets community**.
 
-Don't just maintain it.
+You're not just maintaining a website.
 
-**Improve it for the Cadets who come after you.**
+You're continuing something built by the Cadets before you.
 
-Build things.
-Try things.
-Make mistakes.
-Learn from them.
-
-And most importantly:
+Improve it.  
+Experiment with it.  
+Learn from it.  
+And leave it better than you found it.
 
 **Keep the Cadets spirit alive.**
 
-— Tanmay
-Former President, NIET Coding Cadets
+---
 
-```
-```
+**— Tanmay**  
+Former President, NIET Coding Cadets

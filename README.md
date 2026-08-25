@@ -216,6 +216,29 @@ This makes it easier to update:
 
 ---
 
+## Developer Documentation
+
+> Working on the website or taking over from the previous team?
+
+Read the **[Developer Guide](DEVELOPMENT.md)** before making changes.
+
+It explains:
+
+- Where to update club information
+- How to add and update events
+- Where to add images
+- How to update team members
+- How to modify the website UI
+- How to run the project locally
+- Git workflow for contributors
+- Automatic Cloudflare deployment
+- What to check before pushing changes
+
+**New to the project? Start here:**  
+👉 **[DEVELOPMENT.md — Developer Guide](DEVELOPMENT.md)**
+
+---
+
 ## 🚀 Getting Started
 
 ### Prerequisites
