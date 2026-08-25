@@ -496,7 +496,7 @@ _Where the tech community at NIET happens._
 ## 👨‍💻 Developer
 
 **Tanmay Awasthi**  
-Developer & Maintainer — NIET Coding Cadets Website
+President - NIET Coding Cadets(2025-2026)
 
 Designed and developed the official website for **NIET Coding Cadets**, showcasing the club's events, competitions, workshops, achievements, community activities, and student opportunities.
 
